@@ -14,8 +14,8 @@ export class HomeoneBannerComponent implements OnInit {
 
     mainBannerContent: Content[] = [
         {
-            title: 'Data Science Consulting Services',
-            paragraphText: 'Get professional & reliable research oriented solutions for Data Science and Machine Learning business needs. Enjoy stress free decesion making!',
+            title: 'WHERE AI & INNOVATION COLLIDE',
+            paragraphText: 'Make your life lively, relaxing, and more pleasant with the most powerful technology of the future. Ethical considerations play an important role in automation and artificial intelligence with much-needed vigilant planning and accountable development. ',
             defaultBtnIcon: 'flaticon-structure',
             defaultBtnText: 'About Us',
             defaultBtnLink: 'about-us',

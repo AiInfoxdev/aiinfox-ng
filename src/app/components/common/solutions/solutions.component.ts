@@ -14,30 +14,30 @@ export class SolutionsComponent implements OnInit {
 
     sectionTitle: sectionTitleContent[] = [
         {
-            subTitle: 'Our Solutions',
-            title: 'We Different From Others Should Choose Us',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            subTitle: 'Our Expertise ',
+            title: 'We offer expertly crafted AI services tailored to exceed your expectations.',
+            paragraphText: 'We are the most passionate team of innovators who are well-known for their agility, result-oriented, highly driven, motivated, and efficient. '
         }
     ]
     singleSolutionsBox: solutionsBoxContent[] = [
         {
             icon: 'flaticon-rocket',
-            title: 'Startup Applications',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'AI-Powered Solutions ',
+            paragraphText: 'We exclusively offer a wide array of AI-powered solutions which includes data analysis, automation, content creation, and whatnot.',
             link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-laptop',
-            title: 'SaaS Solutions',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'Data Science',
+            paragraphText: 'We have expertise in collecting, mining, analyzing, visualization, and maintenance of information resulting in valuable insights. ',
             link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-money',
-            title: 'E-Commerce Platforms',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'Machine Learning ',
+            paragraphText: 'We can develop and implement machine learning models, which greatly helps in computerizing tasks and generating creative content. ',
             link: 'services-details',
             linkText: 'View Details'
         }

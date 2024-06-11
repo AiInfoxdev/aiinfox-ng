@@ -16,45 +16,45 @@ export class HomeoneServicesComponent implements OnInit {
         {
             subTitle: 'Our Services',
             title: 'We Offer Professional Solutions For Business',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            paragraphText: 'We are constantly working with a vision in mind to transform the power of Artificial Intelligence for an enhanced future.'
         }
     ]
     singleServicesBox: ServicesBoxContent[] = [
         {
             icon: 'assets/img/services/icon1.png',
-            title: 'Data Analytics',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+            title: 'AI & Machine Learning ',
+            paragraphText: 'We offer exclusive services of AI and Machine Learning services. By implementing this technology, we can create more interactive and intuitive designs resulting in improved user experience, enhanced functionality, and provide personalized experiences. ',
             link: 'services-details',
             linkText: 'Read More',
             linkIcon: 'flaticon-right'
         },
         {
             icon: 'assets/img/services/icon2.png',
-            title: 'AI & ML Development',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+            title: 'Generative AI  ',
+            paragraphText: 'We are exclusive providers of generative AI services. Our team is highly skilled in generative AI services that greatly help create certain types of images, text, and videos.',
             link: 'services-details',
             linkText: 'Read More',
             linkIcon: 'flaticon-right'
         },
         {
             icon: 'assets/img/services/icon3.png',
-            title: 'Data Science',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+            title: 'Mobile App Development ',
+            paragraphText: 'We specialize in mobile app development. Understanding and analyzing the needs and requirements of clients and providing the best solution for mobile app development. We have expertise in cross-platform app development.  ',
             link: 'services-details',
             linkText: 'Read More',
             linkIcon: 'flaticon-right'
         },
         {
             icon: 'assets/img/services/icon4.png',
-            title: 'Predictive Analytics',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+            title: 'Data Science ',
+            paragraphText: 'Our team is efficient in data science and analyzes the data efficiently. It is a powerful tool that is greatly helpful in predicting customer behaviour, and trends and identifying new opportunities. It acts as a tool for helping businesses with product development and marketing. ',
             link: 'services-details',
             linkText: 'Read More',
             linkIcon: 'flaticon-right'
         },
         {
             icon: 'assets/img/services/icon5.png',
-            title: 'Software Development',
+            title: 'Web Development',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
             link: 'services-details',
             linkText: 'Read More',
@@ -62,7 +62,7 @@ export class HomeoneServicesComponent implements OnInit {
         },
         {
             icon: 'assets/img/services/icon6.png',
-            title: 'Elastic Solutions',
+            title: 'Digital Marketing',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
             link: 'services-details',
             linkText: 'Read More',

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 :root {
-    --fontFamily: 'Nunito', sans-serif;
+    --fontFamily: 'Syne', sans-serif;
     --mainColor: #ff5d22;
     --whiteColor: #ffffff;
     --blackColor: #221638;
@@ -36,7 +38,7 @@ img {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font: {
         family: var(--fontFamily);
-        weight: 800;
+        weight: 400;
     };
 }
 p {
@@ -89,7 +91,7 @@ a {
     background-color: #e3fbff;
 }
 .bg-f1f8fb {
-    background-color: #f1f8fb;
+    background-color: #fffbf6;
 }
 .bg-fffbf5 {
     background-color: #fffbf5;
@@ -187,7 +189,8 @@ a {
         position: relative;
         display: inline-block;
         font: {
-            size: 44px;
+            size: 38px;
+            weight: 700;
         };
         .overlay {
             position: absolute;
@@ -201,7 +204,7 @@ a {
     }
     p {
         display: block;
-        max-width: 600px;
+        max-width: 750px;
         margin: {
             left: auto;
             right: auto;
