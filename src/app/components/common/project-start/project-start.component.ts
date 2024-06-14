@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
@@ -14,6 +14,8 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
     ]
 })
 export class ProjectStartComponent implements OnInit {
+
+    @Input('section') section: string = '';
 
     location: any;
     circleShape1Class: any;
@@ -40,7 +42,7 @@ export class ProjectStartComponent implements OnInit {
                     this.vectorShape3Class = 'vector-shape3 d-block';
                     this.vectorShape9Class = 'vector-shape9 d-none';
                     this.vectorShape10Class = 'vector-shape10 d-none';
-                } else if (this.location == '/home-four' || this.location == '/services' || this.location == '/faq'){
+                } else if (this.location == '/home-four' || this.location == '/services' || this.location == '/about-us' || this.location == '/faq'){
                     this.circleShape1Class = 'circle-shape1 d-none';
                     this.vectorShape3Class = 'vector-shape3 d-none';
                     this.vectorShape9Class = 'vector-shape9 d-block';
@@ -61,12 +63,23 @@ export class ProjectStartComponent implements OnInit {
     ]
     projectStartContent: Content[] = [
         {
-            title: 'We Like to Start Your Project With Us',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+            title: 'READY TO KICK OFF OUR COLLABORATION?',
+            paragraphText: 'Drop us a line to discuss how Aiinfox developers can set your product up for success with a human-centered design.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
             defaultBtnLink: 'contact'
         }
+    ]
+
+    CoreValuesContent: Content[] = [
+        {
+            title: 'Our Distinctive Core Values Setting Us Apart',
+            paragraphText: 'For a business to be successful, the foundation needs to be strong and firm. For a strong foundation, the foremost important cornerstone is business ethics. We at AiInfox, stay true to our work and religiously follow a well-defined policy that shows complete transparency between us and our prestigious client leaving any room for dishonesty. This makes us the most trusted partner!',
+            defaultBtnIcon: 'flaticon-web',
+            defaultBtnText: 'Get Started',
+            defaultBtnLink: 'contact'
+        }
+    
     ]
 
 }

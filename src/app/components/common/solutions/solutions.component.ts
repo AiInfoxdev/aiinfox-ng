@@ -37,7 +37,7 @@ export class SolutionsComponent implements OnInit {
         {
             icon: 'flaticon-money',
             title: 'Machine Learning ',
-            paragraphText: 'We can develop and implement machine learning models, which greatly helps in computerizing tasks and generating creative content. ',
+            paragraphText: 'AiInfox can develop and implement machine learning models, which greatly helps in computerizing tasks, providing predictions, and generating creative content on its basis.  ',
             link: 'services-details',
             linkText: 'View Details'
         }

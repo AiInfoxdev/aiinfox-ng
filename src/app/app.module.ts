@@ -74,6 +74,7 @@ import { EventsSpeakersComponent } from './components/pages/events-details-page/
 import { CoursesPageComponent } from './components/pages/courses-page/courses-page.component';
 import { CoursesDetailsPageComponent } from './components/pages/courses-details-page/courses-details-page.component';
 import { RelatedCoursesComponent } from './components/pages/courses-details-page/related-courses/related-courses.component';
+import { GenerativeaiComponent } from './components/pages/services-details-page/generativeai/generativeai.component';
 
 @NgModule({
   declarations: [
@@ -148,11 +149,12 @@ import { RelatedCoursesComponent } from './components/pages/courses-details-page
     EventsSpeakersComponent,
     CoursesPageComponent,
     CoursesDetailsPageComponent,
-    RelatedCoursesComponent,
+    RelatedCoursesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    GenerativeaiComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

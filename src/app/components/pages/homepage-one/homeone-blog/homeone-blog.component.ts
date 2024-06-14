@@ -16,33 +16,33 @@ export class HomeoneBlogComponent implements OnInit {
         {
             subTitle: "Our Blog",
             title: 'Latest Valuable Insights',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            paragraphText: ''
         }
     ]
     singleBlogPost: blogPostContent[] = [
         {
             postImg: 'assets/img/blog/img1.jpg',
-            postTitle: 'Six Ways to Make Smarter Decisions',
+            postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'blog-details',
             postDate: 'April 30, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan'
+            postAuthorName: 'Manjeet'
         },
         {
             postImg: 'assets/img/blog/img2.jpg',
-            postTitle: 'The Challenges to Tackle Before You Start With AI',
+            postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
             postLink: 'blog-details',
             postDate: 'April 28, 2024',
             postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Sarah Taylor'
+            postAuthorName: 'Manjeet'
         },
         {
             postImg: 'assets/img/blog/img3.jpg',
-            postTitle: 'Why Organisations Want an Analytics Platform',
+            postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'blog-details',
             postDate: 'April 27, 2024',
             postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'David Warner'
+            postAuthorName: 'Manjeet'
         }
     ]
 

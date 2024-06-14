@@ -20,16 +20,16 @@ export class ServicesPageComponent implements OnInit {
     singleSolutionsBox: solutionsBoxContent[] = [
         {
             icon: 'flaticon-rocket',
-            title: 'Startup Applications',
+            title: 'Ai and Machine Learning',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
-            link: 'services-details',
+            link: 'ai-machine-learning',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-laptop',
-            title: 'SaaS Solutions',
+            title: 'Generative Ai',
             paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
-            link: 'services-details',
+            link: 'generative-ai',
             linkText: 'View Details'
         },
         {

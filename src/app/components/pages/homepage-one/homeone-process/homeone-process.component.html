@@ -6,7 +6,7 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-4 col-md-6" *ngFor="let processBoxContent of singleProcessBox;">
+        <div class="col-lg-4 col-md-6" [ngClass]="{'col-lg-6 col-md-6': section === 'aboutus'}" *ngFor="let processBoxContent of singleProcessBox;">
             <div class="single-process-box">
                 <div class="number">{{processBoxContent.number}}</div>
                 <div class="image">
@@ -18,5 +18,4 @@
         </div>
     </div>
 </div>
-
 <div class="circle-shape1"><img src="assets/img/shape/circle-shape1.png" alt="image"></div>
