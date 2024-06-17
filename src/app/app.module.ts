@@ -75,6 +75,13 @@ import { CoursesPageComponent } from './components/pages/courses-page/courses-pa
 import { CoursesDetailsPageComponent } from './components/pages/courses-details-page/courses-details-page.component';
 import { RelatedCoursesComponent } from './components/pages/courses-details-page/related-courses/related-courses.component';
 import { GenerativeaiComponent } from './components/pages/services-details-page/generativeai/generativeai.component';
+import { DigitalmarketingseoComponent } from './components/pages/services-details-page/digitalmarketingseo/digitalmarketingseo.component';
+import { AimachinelearningComponent } from './components/pages/services-details-page/aimachinelearning/aimachinelearning.component';
+import { DatascienceComponent } from './components/pages/services-details-page/datascience/datascience.component';
+import { MobileappdevelopmentComponent } from './components/pages/services-details-page/mobileappdevelopment/mobileappdevelopment.component';
+import { WebdesignComponent } from './components/pages/services-details-page/webdesign/webdesign.component';
+import { WebdevelopmentComponent } from './components/pages/services-details-page/webdevelopment/webdevelopment.component';
+import { DiscoverhowtopaiComponent } from './components/pages/blog-details-page/discoverhowtopai/discoverhowtopai.component';
 
 @NgModule({
   declarations: [
@@ -149,12 +156,19 @@ import { GenerativeaiComponent } from './components/pages/services-details-page/
     EventsSpeakersComponent,
     CoursesPageComponent,
     CoursesDetailsPageComponent,
-    RelatedCoursesComponent
+    RelatedCoursesComponent,
+    AimachinelearningComponent,
+    GenerativeaiComponent,
+    DigitalmarketingseoComponent,
+    DatascienceComponent,
+    MobileappdevelopmentComponent,
+    WebdesignComponent,
+    WebdevelopmentComponent,
+    DiscoverhowtopaiComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GenerativeaiComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

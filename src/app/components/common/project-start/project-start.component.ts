@@ -42,7 +42,7 @@ export class ProjectStartComponent implements OnInit {
                     this.vectorShape3Class = 'vector-shape3 d-block';
                     this.vectorShape9Class = 'vector-shape9 d-none';
                     this.vectorShape10Class = 'vector-shape10 d-none';
-                } else if (this.location == '/home-four' || this.location == '/services' || this.location == '/about-us' || this.location == '/faq'){
+                } else if (this.location == '/home-four' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq'){
                     this.circleShape1Class = 'circle-shape1 d-none';
                     this.vectorShape3Class = 'vector-shape3 d-none';
                     this.vectorShape9Class = 'vector-shape9 d-block';
@@ -75,6 +75,17 @@ export class ProjectStartComponent implements OnInit {
         {
             title: 'Our Distinctive Core Values Setting Us Apart',
             paragraphText: 'For a business to be successful, the foundation needs to be strong and firm. For a strong foundation, the foremost important cornerstone is business ethics. We at AiInfox, stay true to our work and religiously follow a well-defined policy that shows complete transparency between us and our prestigious client leaving any room for dishonesty. This makes us the most trusted partner!',
+            defaultBtnIcon: 'flaticon-web',
+            defaultBtnText: 'Get Started',
+            defaultBtnLink: 'contact'
+        }
+    
+    ]
+
+    AiMachineValuesContent: Content[] = [
+        {
+            title: 'Start Quickly with a Generative AI client Briefing by AiInfox',
+            paragraphText: 'AiInfox offers consulting services that offer powerful and innovative AI solutions with our high-end software developed by our skilled team.We are here to provide solutions to every need of yours.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
             defaultBtnLink: 'contact'
