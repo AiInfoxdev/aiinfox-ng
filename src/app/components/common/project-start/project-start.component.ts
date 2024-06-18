@@ -42,7 +42,7 @@ export class ProjectStartComponent implements OnInit {
                     this.vectorShape3Class = 'vector-shape3 d-block';
                     this.vectorShape9Class = 'vector-shape9 d-none';
                     this.vectorShape10Class = 'vector-shape10 d-none';
-                } else if (this.location == '/home-four' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq'){
+                } else if (this.location == '/home-four' || this.location == '/data-science' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq'){
                     this.circleShape1Class = 'circle-shape1 d-none';
                     this.vectorShape3Class = 'vector-shape3 d-none';
                     this.vectorShape9Class = 'vector-shape9 d-block';

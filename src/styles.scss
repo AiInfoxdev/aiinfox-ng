@@ -17,6 +17,10 @@ body {
         family: var(--fontFamily);
     };
 }
+.col-lg-4 {
+
+	display: flex;
+}
 .container {
     max-width: 1230px;
 }
