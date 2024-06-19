@@ -123,3 +123,34 @@ font-weight: 700;
     transform: rotate(90deg) translate(-.25rem);
   }
 }
+@media(max-width: 767px)
+{
+  .mobileorderimg
+  {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mobileorder
+  {
+    order: 2;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.content-left h3
+{
+font-weight: 600;
+padding:20px 0px 10px;
+}
+.content-left li
+{
+  color:#6b6b84;
+  padding: 2px 0px;
+}
+.datascience-details-area img,
+.topleft-img img
+{
+  object-fit: cover;
+  height: 100%;
+}
