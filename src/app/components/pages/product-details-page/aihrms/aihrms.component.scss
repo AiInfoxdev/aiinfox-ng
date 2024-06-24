@@ -1,3 +1,4 @@
+
 .service-content h3
 {
     margin: 25px 0px 12px 0px;
@@ -138,10 +139,33 @@ font-weight: 700;
     flex-wrap: wrap;
   }
 }
-.content-left h3
+.content-left
 {
-font-weight: 600;
-padding:20px 0px 10px;
+    margin-top: 70px;
+}
+.content-left p
+{
+    font-size: 18px;
+}
+.content-left h1
+{
+font-weight: 700;
+padding:0px 0px 10px;
+font-size: 44px;
+}
+.content-left h3 {
+	margin-top: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  max-width: 80%;
+  line-height: 27px;
+}
+.btn-primary {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 20px 0px;
+    background: #ff5d22;
+    border:1px solid #ff5d22;
 }
 .content-left li
 {
@@ -206,4 +230,179 @@ padding:20px 0px 10px;
         flex: 0 0 100%;
         max-width: 100%;
     }
+}
+.keyfeature-outer
+{
+  padding: 50px 30px;
+  background: #020202;
+  border-radius: 10px;
+}
+.keyfeature {
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+}
+.keyfeature img
+{
+  width: 80px;
+}
+.ppt-40
+{
+  margin: 20px 0px;
+}
+.keyfeature h3
+{
+  margin: 15px 0px;
+}
+
+.tabbed-content {
+  background: #fff;
+  max-width: 100%;
+  padding: 1em;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs ul {
+  margin: 0;
+  padding: 0 0 1em 0;
+  font-weight: bold;
+
+}
+.tabs ul li {
+  background: #fff;
+  border-left:1px dashed #000;
+}
+.tabs ul li a {
+  padding: 0.5em 1em;
+}
+.tabs ul li a:hover, .tabs ul li a.active {
+ 
+  color: #ff5d22;
+}
+
+.item {
+  margin-bottom: 0px;
+}
+.item::before {
+  cursor: pointer;
+  font-weight: bold;
+  background: #eee;
+  padding: 0.5em;
+  display: block;
+}
+.item.active::before {
+  background: #444;
+  color: #eee;
+}
+.item.active .item-content {
+  
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@media all and (min-width: 800px) {
+  .item.active .item-content {
+    padding-top: 0px;
+  }
+
+  .tabs-side .tabs li {
+    margin-bottom: 2px;
+  }
+}
+/* 
+The project specific CSS starts here
+This is the minimum CSS that you will need in order for this to work
+*/
+.tabbed-content .tabs {
+  display: none;
+}
+.tabbed-content .item {
+  min-height: 2em;
+}
+.tabbed-content .item::before {
+  content: attr(data-title);
+}
+.tabbed-content .item .item-content {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+.tabbed-content .item.active .item-content {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
+
+@media all and (min-width: 800px) {
+  .tabbed-content .tabs {
+    display: flex;
+  }
+  .tabbed-content .tabs li {
+    display: inline-block;
+  }
+  .tabbed-content .tabs li a {
+    display: block;
+  }
+  .tabbed-content .item {
+    min-height: 0;
+  }
+  .tabbed-content .item::before {
+    display: none;
+  }
+  .tabbed-content.tabs-side .tabs {
+    width: 30%;
+    
+  }
+  .tabbed-content.tabs-side .tabs li {
+    display: block;
+  }
+  .tabbed-content.tabs-side .item {
+    width:100%;
+
+  }
+  .itemsright-sec
+  {
+    width: 70%;
+  }
+ 
+.inner-item
+{
+  border: 1px solid #000;
+  padding: 30px;
+  border-radius: 10px;
+}
+.inner-item p
+{
+  margin-bottom: 40px;
+}
+.item-content img
+{
+  border: 1px solid #e2e2e2;
+}
+}
+
+.benefits-features {
+	background: #f8f0e4;
+  padding: 70px 0px;
+  margin-top: 80px;
+}
+.benefits-hrms {
+	background: #fff;
+	padding: 30px;
+	border-radius: 15px;
+  box-shadow: 1px 1px 6px #ccc;
+}
+.benefits-hrms li {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+.benefits-hrms ul {
+	list-style-type: none;
+  padding: 0;
+	/* margin-bottom: 30px; */
 }

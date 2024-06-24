@@ -1062,3 +1062,27 @@
     }
 
 }
+
+// custom mega menu//
+.megamenu
+{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 600px  !important;
+    left: -250px  !important;
+}
+.megamenu li
+{
+    flex: 0 0 50% !important;
+}
+@media(max-width:1199px)
+{
+    .megamenu li
+    {
+        flex: 0 0 100% !important;
+    }
+    .megamenu
+    {
+        width: 100% !important;
+    }
+}
