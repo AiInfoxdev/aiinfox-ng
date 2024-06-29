@@ -31,6 +31,8 @@ import { DiscoverhowtopaiComponent } from './components/pages/blog-details-page/
 import { AichatbotComponent } from './components/pages/product-details-page/aichatbot/aichatbot.component';
 import { AihmsComponent } from './components/pages/product-details-page/aihms/aihms.component';
 import { AihrmsComponent } from './components/pages/product-details-page/aihrms/aihrms.component';
+import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml-development.component';
+import { GenAiDevelopmentComponent } from './landingpages/gen-ai-development/gen-ai-development.component';
 
 const routes: Routes = [
     {path: '', component: HomepageOneComponent},
@@ -49,12 +51,14 @@ const routes: Routes = [
     {path: 'web-development', component: WebdevelopmentComponent},
     {path: 'services-details', component: ServicesDetailsPageComponent},
     //Blog URLs
-    {path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries', component: DiscoverhowtopaiComponent},
+    // {path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries', component: DiscoverhowtopaiComponent},
     {path: 'gallery', component: GalleryPageComponent},
     {path: 'courses', component: CoursesPageComponent},
     {path: 'ai-hrms', component: AihrmsComponent},
     {path: 'ai-hms', component: AihmsComponent},
     {path: 'ai-chatbot', component: AichatbotComponent},
+    {path: 'landing-ai-ml-developement', component: AiMlDevelopmentComponent},
+    {path: 'landing-gen-ai-development', component: GenAiDevelopmentComponent},
     {path: 'courses-details', component: CoursesDetailsPageComponent},
     {path: 'events', component: EventsPageComponent},
     {path: 'events-details', component: EventsDetailsPageComponent},

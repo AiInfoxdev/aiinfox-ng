@@ -42,7 +42,8 @@ export class ProjectStartComponent implements OnInit {
                     this.vectorShape3Class = 'vector-shape3 d-block';
                     this.vectorShape9Class = 'vector-shape9 d-none';
                     this.vectorShape10Class = 'vector-shape10 d-none';
-                } else if (this.location == '/home-four' || this.location == '/data-science' || this.location == '/mobile-app-development' || this.location == '/web-development' || this.location == '/web-design' || this.location == '/digital-marketing-seo' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq'){
+                } else if (this.location == '/home-four' || this.location == '/data-science' || this.location == '/mobile-app-development' || this.location == '/web-development' || this.location == '/web-design' || this.location == '/digital-marketing-seo' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq' || this.location ==='/landing-ai-ml-developement'
+                ){
                     this.circleShape1Class = 'circle-shape1 d-none';
                     this.vectorShape3Class = 'vector-shape3 d-none';
                     this.vectorShape9Class = 'vector-shape9 d-block';
@@ -119,6 +120,17 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'We have become one of the best mobile app development agency India and are best known for providing exceptional services and support at the same time.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
+            defaultBtnLink: 'contact'
+        }
+    
+    ]
+
+    takeTheFirstStepContent: Content[] = [
+        {
+            title: 'Take the First Step',
+            paragraphText: 'Begin your no-commitment, 1-week trial today.',
+            defaultBtnIcon: 'flaticon-web',
+            defaultBtnText: 'CONSULT FOR FREE-TRIAL',
             defaultBtnLink: 'contact'
         }
     

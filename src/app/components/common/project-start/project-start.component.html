@@ -153,3 +153,31 @@
         <div class="{{vectorShape10Class}}"><img src="assets/img/shape/vector-shape10.png" alt="image"></div>
     </section>
 </ng-container>
+
+<!-- takeTheFirstStep -->
+
+<ng-container *ngIf="section === 'takeTheFirstStep'">
+    <section class="project-start-area {{sectionClass}} ptb-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="project-start-content" *ngFor="let Content of takeTheFirstStepContent;">
+                        <h2>{{Content.title}}</h2>
+                        <h3 class="mt-2">Begin your no-commitment, <b><u>1-week trial today.</u></b></h3>
+                        <a class="default-btn mt-3"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="project-start-image" *ngFor="let Image of projectStartImage;">
+                        <img [src]="Image.img" data-revert="true" alt="image">
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="{{circleShape1Class}}"><img src="assets/img/shape/circle-shape1.png" alt="image"></div>
+        <div class="{{vectorShape3Class}}"><img src="assets/img/shape/vector-shape3.png" alt="image"></div>
+        <div class="{{vectorShape9Class}}"><img src="assets/img/shape/vector-shape9.png" alt="image"></div>
+        <div class="{{vectorShape10Class}}"><img src="assets/img/shape/vector-shape10.png" alt="image"></div>
+    </section>
+</ng-container>

@@ -82,6 +82,11 @@ import { MobileappdevelopmentComponent } from './components/pages/services-detai
 import { WebdesignComponent } from './components/pages/services-details-page/webdesign/webdesign.component';
 import { WebdevelopmentComponent } from './components/pages/services-details-page/webdevelopment/webdevelopment.component';
 import { DiscoverhowtopaiComponent } from './components/pages/blog-details-page/discoverhowtopai/discoverhowtopai.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LandingnavbarComponent } from './landingpages/landingnavbar/landingnavbar.component';
+import { LandingfooComponent } from './landingpages/landingfoo/landingfoo.component';
+import { GenAiDevelopmentComponent } from './landingpages/gen-ai-development/gen-ai-development.component';
+import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml-development.component';
 
 @NgModule({
   declarations: [
@@ -164,11 +169,16 @@ import { DiscoverhowtopaiComponent } from './components/pages/blog-details-page/
     MobileappdevelopmentComponent,
     WebdesignComponent,
     WebdevelopmentComponent,
-    DiscoverhowtopaiComponent
+    DiscoverhowtopaiComponent,
+    LandingnavbarComponent,
+    LandingfooComponent,
+    GenAiDevelopmentComponent,
+    AiMlDevelopmentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
