@@ -119,21 +119,124 @@
                         <h1 class="bold">Unleash AI/ML Power for Your Business: Grow Faster, Smarter, Stronger</h1>
                         <h3>Build cutting-edge AI/ML apps with expert developers, affordably.</h3>
                     </div>
-            
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let ServicesBoxContent of singleServicesBox; let idx = index">
-                            <div class="single-services-box">
-                                <h3 class="d-flex justify-content-between align-items-center">
-                                    <h3 class="bold">{{ServicesBoxContent.title}}</h3>
-                                    <!-- <button class="accord text-right" (click)="accordionItems[idx] = !accordionItems[idx]">
-                                        <i class='bx bx-chevron-down'></i>
-                                    </button> -->
-                                </h3>
-                                <p>{{ServicesBoxContent.paragraphText}}</p>
+
+                    <!-- Accord -->
+                    <section class="faq-area pb-100">
+                        <div class="container">
+                            <div class="faq-accordion row align-items-start">
+                                <ul class="accordion row col-4">
+                                    <li class="col-12 mt-5 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[0]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(0)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[0]}"></i>
+                                                {{singleServicesBox[0].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[0].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[1]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(1)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[1]}"></i>
+                                                {{singleServicesBox[1].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[1].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[2]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(2)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[2]}"></i>
+                                                {{singleServicesBox[2].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[2].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="accordion row col-4">
+                                    <li class="col-12 mt-5 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[3]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(3)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[3]}"></i>
+                                                {{singleServicesBox[3].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[3].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[4]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(4)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[4]}"></i>
+                                                {{singleServicesBox[4].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[4].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[5]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(5)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[5]}"></i>
+                                                {{singleServicesBox[5].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[5].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <ul class="accordion row col-4">
+                                    <li class="col-12 mt-5 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[6]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(6)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[6]}"></i>
+                                                {{singleServicesBox[6].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[6].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[7]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(7)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[7]}"></i>
+                                                {{singleServicesBox[7].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[7].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-12 mt-3 accordion-itemwrap">
+                                        <div class="accordion-item" [ngClass]="{'accordionItemsIdx': accordionItems[8]}">
+                                            <a class="accordion-title" href="javascript:void(0)" (click)="accordionItemsClick(8)">
+                                                <i class='bx bx-chevron-down' [ngClass]="{'bx-chevron-up': accordionItems[8]}"></i>
+                                                {{singleServicesBox[8].title}}
+                                            </a>
+                                            <div class="accordion-content">
+                                                <p>{{singleServicesBox[8].paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <section class="row align-items-center mt-5">
+                    </section>
+                     <!--./Accord-->
+            
+                    <section class="row align-items-center">
                         <a class="default-btn col-4 offset-4 fontbtnlarge">
                             <i class="{{aboutContent[0].defaultBtnIcon}}"></i>
                             {{aboutContent[0].defaultBtnText}}<span></span></a>
@@ -295,19 +398,46 @@
 <!-- ./Container -->
 <!-- Container -->
 <section class="contact-area pb-100 pt-100">
-    <div class="container">
-        <div class="section-title" *ngFor="let sectionTitleContent of sectionTitleContact;">
+    <div class="container-fluid">
+        <div class="section-title mb-3" *ngFor="let sectionTitleContent of sectionTitleContact;">
             <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
             <h1 class="bold">{{sectionTitleContent.title}}</h1>
-            <h4>{{sectionTitleContent.paragraphText}}</h4>
+            <!-- <h4>{{sectionTitleContent.paragraphText}}</h4> -->
         </div>
         <div class="row">
-            <div class="col-lg-4 col-md-12">
-                <div class="contact-image" *ngFor="let Image of contactImage;">
+            <div class="col-lg-6 col-md-12 d-flex flex-column">
+                <!-- <div class="contact-image" *ngFor="let Image of contactImage;">
                     <img [src]="Image.img" alt="image">
-                </div>
+                </div> -->
+                <section class="history-area bg-fafafb pt-3 pb-30">
+                    <div class="container">
+                        <div class="section-title" *ngFor="let sectionTitleContent of sectionTitleHistory;">
+                            <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
+                            <!-- <h2>{{sectionTitleContent.title}}</h2> -->
+                            <p>{{sectionTitleContent.paragraphText}}</p>
+                        </div>
+                
+                        <ol class="timeline history-timeline">
+                            <li class="timeline-block" *ngFor="let TimelineBlock of historyTimeline;">
+                                <div class="timeline-icon">
+                                    <span class="dot-badge"></span>
+                                </div>
+                
+                                <div class="timeline-content">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="content">
+                                                <p>{{TimelineBlock.paragraphText}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </section>
             </div>
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-6 col-md-12">
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="row">
