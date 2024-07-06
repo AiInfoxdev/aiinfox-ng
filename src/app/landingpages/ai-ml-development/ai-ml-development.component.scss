@@ -79,6 +79,7 @@
                     }
                     h3 {
                         margin-bottom: 3px;
+                        white-space: nowrap;
                         font: {
                             size: 18px;
                         };
@@ -641,14 +642,14 @@
                             left: 15px;
 
                             img {
-                                width: 50px;
+                                // width: 50px;
                             }
                         }
                         h3 {
-                            font-size: 22px;
+                            // font-size: 22px;
                         }
                         p {
-                            font-size: 15px;
+                            // font-size: 15px;
                         }
                     }
                 }
