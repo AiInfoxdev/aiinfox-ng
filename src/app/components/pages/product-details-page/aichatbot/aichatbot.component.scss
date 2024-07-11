@@ -239,12 +239,12 @@ font-size: 44px;
 }
 .keyfeature {
 	background: #fff;
-	padding: 20px;
+	padding: 20px 0px;
 	border-radius: 10px;
 }
 .keyfeature img
 {
-  width: 80px;
+  width: 100%;
 }
 .ppt-40
 {
@@ -252,7 +252,14 @@ font-size: 44px;
 }
 .keyfeature h3
 {
-  margin: 15px 0px;
+  margin: 0px 0px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  width: 100%;
+  text-align: center;
 }
 
 .tabbed-content {
@@ -427,4 +434,42 @@ This is the minimum CSS that you will need in order for this to work
  {
   margin-bottom: 30px;
  }
+}
+
+.keyfeature ul {
+	list-style-type: none;
+	padding: 0px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.keyfeature ul li {
+	border: 1px solid #f0eae2;
+  width: 32%;
+  margin: 15px 1% 15px 0px;
+  padding: 0px 0px 0px 0px;
+  border-radius: 6px;
+  position: relative;
+}
+.keyright-sect {
+	// max-width: 585px;
+  margin-left: 50px;
+}
+.keyright-sect h2 {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0px 0px 20px ;
+}
+@media(max-width: 700px)
+{
+  .keyfeature ul li {
+    width: 100%;
+    margin: 15px 0% 15px 0px;
+  }
+}
+@media (min-width: 701px) and (max-width: 991px)
+{
+  .keyfeature ul li {
+    width: 49%;
+    margin: 15px 1% 15px 0px;
+  }
 }

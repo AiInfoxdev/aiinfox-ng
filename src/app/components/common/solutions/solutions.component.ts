@@ -21,7 +21,7 @@ export class SolutionsComponent implements OnInit {
     ]
     singleSolutionsBox: solutionsBoxContent[] = [
         {
-            icon: 'flaticon-rocket',
+            icon: 'flaticon-ArtificialIntelligence',
             title: 'AI-Powered Solutions ',
             paragraphText: 'We exclusively offer a wide array of AI-powered solutions which includes data analysis, automation, content creation, and whatnot.',
             link: 'services-details',
