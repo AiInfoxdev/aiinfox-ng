@@ -86,7 +86,7 @@
 
         &:nth-child(1) {
             left: 0;
-            bottom: -220px;
+            bottom: -290px;
             z-index: 1;
         }
         &:nth-child(2) {
@@ -217,7 +217,7 @@
                 display: none;
             }
             &:last-child {
-                display: inline-block;
+                display: none;
             }
         }
     }

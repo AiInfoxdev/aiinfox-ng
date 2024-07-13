@@ -26,25 +26,25 @@ export class HomeoneProcessComponent implements OnInit, AfterViewInit {
 
             this.singleProcessBox = [
                 {
-                    img: 'assets/img/process/img1.png',
+                    img: 'assets/img/process/whyus1.jpg',
                     title: ' We Know Your Business ',
                     paragraphText: 'We save your business from unnecessary problems and challenges that can arise!  ',
                     number: '1'
                 },
                 {
-                    img: 'assets/img/process/img2.png',
+                    img: 'assets/img/process/whyus2.jpg',
                     title: 'Promote Your Business ',
                     paragraphText: 'As we know everything about your business, we will combine our tools and technologies to make you reach newer heights.  ',
                     number: '2'
                 },
                 {
-                    img: 'assets/img/process/img3.png',
+                    img: 'assets/img/process/whyus3.jpg',
                     title: 'Worth a Smart Investment  ',
                     paragraphText: 'Hiring AiInfox for economical and convenient ways to achieve your targets by employing transparent and affordable services.  ',
                     number: '3'
                 },
                 {
-                    img: 'assets/img/process/img4.png',
+                    img: 'assets/img/process/whyus4.jpg',
                     title: 'One-Stop Destination for All-In-One Marketing Team ',
                     paragraphText: 'AiInfox provides a complete package of all-in-one marketing services combined with extensive experience and expertise.  ',
                     number: '4'
@@ -58,45 +58,45 @@ export class HomeoneProcessComponent implements OnInit, AfterViewInit {
                 {
                     subTitle: "Our Process",
                     title: 'Our Course of Action ',
-                    paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+                    paragraphText: 'AiInfox specializes in developing customized AI solutions to cater to the specific needs of clients. '
                 }
             ];
 
             this.singleProcessBox = [
                 {
-                    img: 'assets/img/process/img1.png',
-                    title: 'Data-Driven Decisions ',
-                    paragraphText: 'By employing advanced data-driven models, data-driven decision-making is enhanced greatly. AI models are generally computer program tasks that require human intelligence, including prediction, classification, recommendation, and natural language processing. ',
+                    img: 'assets/img/process/process1.jpg',
+                    title: 'Data Collection',
+                    paragraphText: 'At AiInfox, our process begins with a thorough and strategic data collection using advanced techniques. ',
                     number: '1'
                 },
                 {
-                    img: 'assets/img/process/img2.png',
-                    title: 'Augmented Human Intelligence ',
-                    paragraphText: 'To achieve better results, using human intelligence along with Artificial Intelligence is now possible. With the help of AI, humans may influence strength by weighing down their limitations resulting in higher productivity while minimizing errors. ',
+                    img: 'assets/img/process/process2.jpg',
+                    title: 'Data Analysis',
+                    paragraphText: 'Our experts analyze patterns and correlations, extracting valuable insights to inform decision-making. ',
                     number: '2'
                 },
                 {
-                    img: 'assets/img/process/img3.png',
-                    title: 'Objectivity and Transparency ',
-                    paragraphText: 'When it comes to AI, objectivity, and transparency hold important value. AI algorithm ensures there is no biasedness and no human error. The outcome will help mitigate operational risks and provide the best possible results.  ',
+                    img: 'assets/img/process/process3.jpg',
+                    title: 'Create Modules',
+                    paragraphText: 'Utilizing insights from data analysis, we create precision-crafted modular components, the foundation of our AI applications.',
                     number: '3'
                 },
                 {
-                    img: 'assets/img/process/img4.png',
-                    title: 'Innovation Velocity and Operational Efficiency ',
-                    paragraphText: 'Innovation velocity and operational efficiency are unlocked at an accelerated pace through the integration of AI. Utilizing various tools to expedite hypothesis testing, data analysis, and scenario simulation, we drive innovation and enhance operations, achieving optimal efficiency within the given time frame.  ',
+                    img: 'assets/img/process/process4.jpg',
+                    title: 'Integrating Modules ',
+                    paragraphText: 'We seamlessly integrate our developed modules into an intelligent system, ensuring synergy and efficiency that perfectly aligns with your business objectives.  ',
                     number: '4'
                 },
                 {
-                    img: 'assets/img/process/img5.png',
-                    title: 'Future-Proofing Your Enterprise',
-                    paragraphText: 'At AiInfox, we have exclusive expertise in AI. As a leading company, we provide expert solutions that give your business a competitive edge, enabling it to navigate and guard against the evolving dynamics of the future market. You can easily engage with customers, and identify the patterns easily.   ',
+                    img: 'assets/img/process/process5.jpg',
+                    title: 'Monitoring and Testing',
+                    paragraphText: 'We continuously monitor the performance of the module to ensure it works as expected. Additionally, we proactively address any issues or optimize the module to maintain peak performance.',
                     number: '5'
                 },
                 {
-                    img: 'assets/img/process/img6.png',
-                    title: 'Communicate Results',
-                    paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+                    img: 'assets/img/process/process6.jpg',
+                    title: 'Final Deployment',
+                    paragraphText: 'After completing all work, we deliver the final product to the client, ensuring it meets all specified requirements and performs optimally.',
                     number: '6'
                 }
             ]
