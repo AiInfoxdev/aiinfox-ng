@@ -16,7 +16,7 @@
 <section class="contact-info-area pt-100 pb-70">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-6 col-md-6">
                 <div class="contact-info-box" *ngFor="let InfoBox1 of contactInfoBox1;">
                     <div class="back-icon">
                         <i class='{{InfoBox1.icon}}'></i>
@@ -28,7 +28,33 @@
                     <p>{{InfoBox1.location}}</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info-box" *ngFor="let InfoBox4 of contactInfoBox4;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox4.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox4.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox4.title}}</h3>
+                    <p>{{InfoBox4.location}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class="contact-info-box" *ngFor="let InfoBox5 of contactInfoBox5;">
+                    <div class="back-icon">
+                        <i class='{{InfoBox5.icon}}'></i>
+                    </div>
+                    <div class="icon">
+                        <i class='{{InfoBox5.icon}}'></i>
+                    </div>
+                    <h3>{{InfoBox5.title}}</h3>
+                    <p>{{InfoBox5.location}}</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
                 <div class="contact-info-box" *ngFor="let InfoBox2 of contactInfoBox2;">
                     <div class="back-icon">
                         <i class='{{InfoBox2.icon}}'></i>
@@ -41,7 +67,7 @@
                     <p>E-mail: <a href="mailto:{{InfoBox2.email}}">{{InfoBox2.email}}</a></p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+            <!-- <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                 <div class="contact-info-box" *ngFor="let InfoBox3 of contactInfoBox3;">
                     <div class="back-icon">
                         <i class='{{InfoBox3.icon}}'></i>
@@ -53,7 +79,7 @@
                     <p>{{InfoBox3.text1}}</p>
                     <p>{{InfoBox3.text2}}</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
@@ -107,5 +133,5 @@
 </section>
 
 <div id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9476519598093!2d-73.99185268459418!3d40.74117737932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a3f81d549f%3A0xb2a39bb5cacc7da0!2s175%205th%20Ave%2C%20New%20York%2C%20NY%2010010%2C%20USA!5e0!3m2!1sen!2sbd!4v1588746137032!5m2!1sen!2sbd"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6860.659711808146!2d76.688358!3d30.709126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef0b0308c373%3A0x278e99c2f11d8157!2sAiInfox!5e0!3m2!1sen!2sus!4v1720544833691!5m2!1sen!2sus"  ></iframe>
 </div>

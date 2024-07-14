@@ -20,26 +20,42 @@ export class ContactPageComponent implements OnInit {
     contactInfoBox1: InfoBox1[] = [
         {
             icon: 'bx bx-map',
-            title: 'Our Address',
-            location: '175 5th Ave, New York, NY 10010, United States'
+            title: 'US',
+            location: '5206, Craftsman ST, Johns Creek Georgia, 30097'
+        }
+    ]
+    
+    contactInfoBox4: InfoBox4[] = [
+        {
+            icon: 'bx bx-map',
+            title: 'Canada',
+            location: '85, Nortonville drive, Scarborough, Ontario M1T 2G9'
+        }
+    ]
+
+    contactInfoBox5: InfoBox5[] = [
+        {
+            icon: 'bx bx-map',
+            title: 'India',
+            location: 'D-234 , Phase 8B, Industrial Area, Sector 74, SAS Nagar, Punjab 160055'
         }
     ]
     contactInfoBox2: InfoBox2[] = [
         {
             icon: 'bx bx-phone-call',
             title: 'Contact',
-            number: '(+44) - 45789 - 5789',
-            email: 'hello&#64;wilo.com'
+            number: '+91-9988339877',
+            email: 'info@aiinfox.com'
         }
     ]
-    contactInfoBox3: InfoBox3[] = [
-        {
-            icon: 'bx bx-time-five',
-            title: 'Hours of Operation',
-            text1: 'Monday - Friday: 09:00 - 20:00',
-            text2: 'Sunday & Saturday: 10:30 - 22:00'
-        }
-    ]
+    // contactInfoBox3: InfoBox3[] = [
+    //     {
+    //         icon: 'bx bx-time-five',
+    //         title: 'Hours of Operation',
+    //         text1: 'Monday - Friday: 09:00 - 20:00',
+    //         text2: 'Sunday & Saturday: 10:30 - 22:00'
+    //     }
+    // ]
 
     sectionTitle: sectionTitleContent[] = [
         {
@@ -69,13 +85,22 @@ class InfoBox2 {
     number : string;
     email : string;
 }
-class InfoBox3 {
+// class InfoBox3 {
+//     icon : string;
+//     title : string;
+//     text1 : string;
+//     text2 : string;
+// }
+class InfoBox4 {
     icon : string;
     title : string;
-    text1 : string;
-    text2 : string;
+    location : string;
 }
-
+class InfoBox5 {
+    icon : string;
+    title : string;
+    location : string;
+}
 class sectionTitleContent {
     subTitle : string;
     title : string;

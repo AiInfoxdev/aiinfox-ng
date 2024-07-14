@@ -21,19 +21,19 @@ export class HomeoneTestimonialsComponent implements OnInit {
     ]
     singleTestimonialsItem: TestimonialsItemContent[] = [
         {
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.',
+            paragraphText: 'It was great to work with AiInfox. He completed all the tasks on time and was very responsive.',
             clientImg: 'assets/img/testimonials/img1.jpg',
-            clientName: 'Alex Maxwell',
+            clientName: 'Aleksandre Deriugini',
             clientDesignation: 'CEO at EnvyTheme'
         },
         {
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.',
+            paragraphText: 'It was great to work with AiInfox. He completed all the tasks on time and was very responsive.',
             clientImg: 'assets/img/testimonials/img2.jpg',
             clientName: 'David Warner',
             clientDesignation: 'CEO at Envato'
         },
         {
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.',
+            paragraphText: 'It was great to work with AiInfox. He completed all the tasks on time and was very responsive.',
             clientImg: 'assets/img/testimonials/img3.jpg',
             clientName: 'Sarah Taylor',
             clientDesignation: 'CEO at ThemeForest'

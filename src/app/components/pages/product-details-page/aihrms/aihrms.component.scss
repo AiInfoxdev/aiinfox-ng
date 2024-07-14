@@ -293,8 +293,8 @@ font-size: 44px;
   display: block;
 }
 .item.active::before {
-  background: #444;
-  color: #eee;
+  background: #ff5d22;
+  color: #fff;
 }
 .item.active .item-content {
   
@@ -311,8 +311,13 @@ font-size: 44px;
   }
 
   .tabs-side .tabs li {
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
+  .inner-item
+{
+  padding: 0px;
+
+}
 }
 /* 
 The project specific CSS starts here
@@ -323,6 +328,12 @@ This is the minimum CSS that you will need in order for this to work
 }
 .tabbed-content .item {
   min-height: 2em;
+  border-bottom: 1px solid #000;
+}
+.inner-item
+{
+  padding: 20px 10px;
+
 }
 .tabbed-content .item::before {
   content: attr(data-title);
@@ -341,6 +352,10 @@ This is the minimum CSS that you will need in order for this to work
 @media all and (min-width: 800px) {
   .tabbed-content .tabs {
     display: flex;
+  }
+  .tabbed-content .item {
+   
+    border-bottom: 0px solid #000;
   }
   .tabbed-content .tabs li {
     display: inline-block;
@@ -405,4 +420,11 @@ This is the minimum CSS that you will need in order for this to work
 	list-style-type: none;
   padding: 0;
 	/* margin-bottom: 30px; */
+}
+@media(max-width: 991px)
+{
+ .benefits-features .col-lg-6
+ {
+  margin-bottom: 30px;
+ }
 }
