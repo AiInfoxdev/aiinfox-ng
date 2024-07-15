@@ -1,6 +1,6 @@
 .solutions-area {
     .section-title {
-        max-width: 695px;
+        max-width: 795px;
     }
 }
 .single-solutions-box {
@@ -10,11 +10,17 @@
     transition: var(--transition);
     border: 1px solid #f5f3f2;
     text-align: center;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
     .icon {
         margin-bottom: 25px;
         line-height: 1;
         font-size: 65px;
+        width: 70px;
+        height: 70px;
     }
     h3 {
         margin-bottom: 12px;

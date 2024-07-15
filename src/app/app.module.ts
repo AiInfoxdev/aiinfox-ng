@@ -74,6 +74,19 @@ import { EventsSpeakersComponent } from './components/pages/events-details-page/
 import { CoursesPageComponent } from './components/pages/courses-page/courses-page.component';
 import { CoursesDetailsPageComponent } from './components/pages/courses-details-page/courses-details-page.component';
 import { RelatedCoursesComponent } from './components/pages/courses-details-page/related-courses/related-courses.component';
+import { GenerativeaiComponent } from './components/pages/services-details-page/generativeai/generativeai.component';
+import { DigitalmarketingseoComponent } from './components/pages/services-details-page/digitalmarketingseo/digitalmarketingseo.component';
+import { AimachinelearningComponent } from './components/pages/services-details-page/aimachinelearning/aimachinelearning.component';
+import { DatascienceComponent } from './components/pages/services-details-page/datascience/datascience.component';
+import { MobileappdevelopmentComponent } from './components/pages/services-details-page/mobileappdevelopment/mobileappdevelopment.component';
+import { WebdesignComponent } from './components/pages/services-details-page/webdesign/webdesign.component';
+import { WebdevelopmentComponent } from './components/pages/services-details-page/webdevelopment/webdevelopment.component';
+import { DiscoverhowtopaiComponent } from './components/pages/blog-details-page/discoverhowtopai/discoverhowtopai.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LandingnavbarComponent } from './landingpages/landingnavbar/landingnavbar.component';
+import { LandingfooComponent } from './landingpages/landingfoo/landingfoo.component';
+import { GenAiDevelopmentComponent } from './landingpages/gen-ai-development/gen-ai-development.component';
+import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml-development.component';
 
 @NgModule({
   declarations: [
@@ -149,10 +162,23 @@ import { RelatedCoursesComponent } from './components/pages/courses-details-page
     CoursesPageComponent,
     CoursesDetailsPageComponent,
     RelatedCoursesComponent,
+    AimachinelearningComponent,
+    GenerativeaiComponent,
+    DigitalmarketingseoComponent,
+    DatascienceComponent,
+    MobileappdevelopmentComponent,
+    WebdesignComponent,
+    WebdevelopmentComponent,
+    DiscoverhowtopaiComponent,
+    LandingnavbarComponent,
+    LandingfooComponent,
+    GenAiDevelopmentComponent,
+    AiMlDevelopmentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

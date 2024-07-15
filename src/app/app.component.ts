@@ -19,9 +19,11 @@ export class AppComponent implements OnInit {
     title: any;
     location: any;
     routerSubscription: any;
+    isLandingPage: boolean = false;
 
-    constructor(private router: Router) {
-    }
+    constructor(
+        private router: Router
+    ) {}
 
     ngOnInit(){
         this.recallJsFuntions();
@@ -40,6 +42,11 @@ export class AppComponent implements OnInit {
             $.getScript('../assets/js/main.js');
             $('.preloader').fadeOut('slow');
             this.location = this.router.url;
+            if(this.location.includes('/landing-')) {
+                this.isLandingPage = true;
+            } else {
+                this.isLandingPage = false;
+            }
             if (!(event instanceof NavigationEnd)) {
                 return;
             }

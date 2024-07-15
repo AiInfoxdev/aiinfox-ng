@@ -57,7 +57,8 @@
                 "src/assets/js/debug.addIndicators.min.js",
                 "src/assets/js/sticky-sidebar.min.js",
                 "src/assets/js/wow.min.js",
-                "src/assets/js/main.js"
+                "src/assets/js/main.js",
+                "src/assets/js/tabaccordscript.js"
             ],
             "vendorChunk": true,
             "extractLicenses": false,

@@ -20,9 +20,9 @@ export class AboutpageAboutComponent implements OnInit {
     aboutContent: Content[] = [
         {
             subTitle: 'About Us',
-            title: 'Drive Digital Revolution Through Data Science',
-            paragraphText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            paragraphText2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            title: 'Drive Digital Revolution Through Best Generative AI Company',
+            paragraphText1: 'AiInfox is a dedicated team of AI developers, coders, designers, and digital marketers who are rigorously working to leave a mark in the field of Artificial Intelligence.',
+            paragraphText2: 'With the rise of AI in the market, we focused exceptionally on providing artificial intelligence and machine learning, web development, generative ai services, data science services, web design services, mobile app development and digital marketing services. We came into existence in August 2023. Since then, we have been on the path of providing exceptional services to our clients with maximum satisfaction.'
         }
     ]
     featuresList: List[] = [
@@ -49,8 +49,8 @@ export class AboutpageAboutComponent implements OnInit {
     ]
     aboutText: Text[] = [
         {
-            title: 'Our History',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication.',
+            title: 'Our Vision',
+            paragraphText: 'Our vision is to provide the best artificial intelligence services in AI machine learning, web development, mobile app development and digital marketing services and cater to every need of our client most effectively and efficiently.',
             featuresList1: 'Activate Listening',
             featuresList2: 'Brilliant minds',
             featuresList3: 'Better. Best. Wow!',
@@ -59,22 +59,22 @@ export class AboutpageAboutComponent implements OnInit {
         },
         {
             title: 'Our Mission',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication.',
+            paragraphText: 'To provide the best possible tailored solutions to our valuable clients across the globe ensuring satisfaction and staying ahead of the competition in the ever-changing technology field!.',
             featuresList1: 'Creating. Results.',
             featuresList2: 'Expect more',
             featuresList3: 'Good thinking',
             featuresList4: 'In real we trust',
             icon: 'flaticon-tick'
         },
-        {
-            title: 'Who we are',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication.',
-            featuresList1: 'Stay real. Always.',
-            featuresList2: 'We have you covered',
-            featuresList3: 'We turn heads',
-            featuresList4: 'Your brand, promoted',
-            icon: 'flaticon-tick'
-        }
+        // {
+        //     title: 'Who we are',
+        //     paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication.',
+        //     featuresList1: 'Stay real. Always.',
+        //     featuresList2: 'We have you covered',
+        //     featuresList3: 'We turn heads',
+        //     featuresList4: 'Your brand, promoted',
+        //     icon: 'flaticon-tick'
+        // }
     ]
 
 }

@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');
+
 :root {
-    --fontFamily: 'Nunito', sans-serif;
+    --fontFamily: 'Syne', sans-serif;
     --mainColor: #ff5d22;
     --whiteColor: #ffffff;
     --blackColor: #221638;
@@ -14,6 +16,10 @@ body {
         size: var(--fontSize);
         family: var(--fontFamily);
     };
+}
+.col-lg-4 {
+
+	display: flex;
 }
 .container {
     max-width: 1230px;
@@ -36,7 +42,7 @@ img {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font: {
         family: var(--fontFamily);
-        weight: 800;
+        weight: 400;
     };
 }
 p {
@@ -44,7 +50,7 @@ p {
     line-height: 1.8;
     margin-bottom: 15px;
     font: {
-        weight: 600;
+        weight: 400;
         size: var(--fontSize);
     };
     &:last-child {
@@ -85,11 +91,27 @@ a {
 .pb-70 {
     padding-bottom: 70px;
 }
+.pt-50 {
+    padding-top: 50px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .bg-e3fbff {
     background-color: #e3fbff;
 }
 .bg-f1f8fb {
-    background-color: #f1f8fb;
+    background-color: #fffbf6;
 }
 .bg-fffbf5 {
     background-color: #fffbf5;
@@ -187,7 +209,8 @@ a {
         position: relative;
         display: inline-block;
         font: {
-            size: 44px;
+            size: 38px;
+            weight: 700;
         };
         .overlay {
             position: absolute;
@@ -201,7 +224,7 @@ a {
     }
     p {
         display: block;
-        max-width: 600px;
+        max-width: 750px;
         margin: {
             left: auto;
             right: auto;
@@ -325,7 +348,7 @@ Page Title Area CSS
 .page-title-area {
     position: relative;
     z-index: 1;
-    background: transparent url(assets/img/page-title-bg.jpg) right top no-repeat;
+    background: #fffcf7;
     padding: {
         top: 200px;
         bottom: 100px;
@@ -571,7 +594,7 @@ Shape Img CSS
         height: 100%;
         top: 0;
         left: 50%;
-        background: #e5ebf0;
+        background: #f7f7f7;
         overflow: hidden;
 
         &::after {

@@ -19,9 +19,9 @@ export class HomeoneAboutComponent implements OnInit {
     ]
     aboutContent: Content[] = [
         {
-            subTitle: 'About Us',
-            title: 'Drive Digital Revolution Through Data Science',
-            paragraphText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
+            subTitle: 'Our Values ',
+            title: 'We at AiInfox, are proud to have core values that reflect who we are.',
+            paragraphText1: 'We stick to our core values and work accordingly to deliver the best results.',
             paragraphText2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
             defaultBtnIcon: 'flaticon-right',
             defaultBtnText: 'More About Us',
@@ -31,22 +31,32 @@ export class HomeoneAboutComponent implements OnInit {
     featuresList: List[] = [
         {
             icon: 'assets/img/icon1.png',
-            title: '10 Years',
+            title: 'Integrity ',
             subTitle: 'On the market'
         },
         {
             icon: 'assets/img/icon2.png',
-            title: '45+',
+            title: 'Innovation ',
             subTitle: 'Team members'
         },
         {
             icon: 'assets/img/icon3.png',
-            title: '100%',
+            title: 'Accountability ',
             subTitle: 'Satisfaction rate'
         },
         {
             icon: 'assets/img/icon4.png',
-            title: '80%',
+            title: 'Diversity ',
+            subTitle: 'Senior scientist'
+        },
+        {
+            icon: 'assets/img/icon4.png',
+            title: 'Compassion  ',
+            subTitle: 'Senior scientist'
+        },
+        {
+            icon: 'assets/img/icon4.png',
+            title: 'Resilience  ',
             subTitle: 'Senior scientist'
         }
     ]

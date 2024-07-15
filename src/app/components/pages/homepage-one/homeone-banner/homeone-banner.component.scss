@@ -86,7 +86,7 @@
 
         &:nth-child(1) {
             left: 0;
-            bottom: -220px;
+            bottom: -290px;
             z-index: 1;
         }
         &:nth-child(2) {
@@ -217,7 +217,7 @@
                 display: none;
             }
             &:last-child {
-                display: inline-block;
+                display: none;
             }
         }
     }
@@ -460,7 +460,9 @@
     }
     .main-banner-content {
         h1 {
-            font-size: 65px;
+            font-size: 74px;
+            font-weight: 700;
+            line-height: 1;
         }
     }
     .main-banner-animation-image {

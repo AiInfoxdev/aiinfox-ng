@@ -14,20 +14,20 @@ export class HomeoneCaseStudiesComponent implements OnInit {
 
     singleCaseStudyItem: singleCaseStudyItemContent[] = [
         {
-            subTitle: 'Case study #1',
-            title: 'Data Science in Pharmaceutical Industries',
-            paragraphText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            paragraphText2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+            subTitle: 'Our Projects',
+            title: 'HRMS',
+            paragraphText1: 'It is a suite of software developed by us that helps organizations manage internal human resource functions. ',
+            paragraphText2: 'It is loaded with tons of features that help human resource personnel easily and quickly automate time-consuming and tedious processes and activities.',
             link: 'case-studies-details',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
             img: 'assets/img/case-study/img1.jpg'
         },
         {
-            subTitle: 'Case study #2',
-            title: 'Mathematics, Advanced Statistics in Python',
-            paragraphText1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.',
-            paragraphText2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.',
+            subTitle: 'Our Projects',
+            title: 'HMS',
+            paragraphText1: 'The Hospital Management system is a complete integrated suite of software specially designed to carry out all medical services, inventory tracking, supply chain optimization and staff management in a smooth way.',
+            paragraphText2: '',
             link: 'case-studies-details',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',

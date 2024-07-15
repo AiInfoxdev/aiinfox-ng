@@ -11,9 +11,15 @@
     border-radius: 5px;
     z-index: 1;
     overflow: hidden;
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 
     .icon {
         margin-bottom: 25px;
+        width: 80px;
+        height: 80px;
     }
     h3 {
         margin-bottom: 12px;
@@ -33,7 +39,7 @@
         height: 100%;
         z-index: -1;
         transition: var(--transition);
-        background: linear-gradient(to right top, #66eaff, #8feffd, #b0f3fd, #ccf7fc, #e7fbfd);
+        background: linear-gradient(to right top, #e8e3de, #e8e3de, #e8e3de, #e8e3de, #fffbf6);
         transform: rotate(-12deg);
     }
     &::after {

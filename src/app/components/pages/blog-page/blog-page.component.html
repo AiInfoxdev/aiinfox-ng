@@ -17,10 +17,10 @@
 <section class="blog-area ptb-100">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6" *ngFor="let blogPostContent of singleBlogPost;">
+            <div class="col-lg-4 col-md-6" *ngFor="let blogPostContent of blogData;">
                 <div class="single-blog-post bg-fffbf5">
                     <div class="post-image">
-                        <a routerLink="/{{blogPostContent.postLink}}">
+                        <a routerLink="/{{blogPostContent.path}}">
                             <img [src]="blogPostContent.postImg" alt="image">
                         </a>
                     </div>
@@ -37,7 +37,7 @@
                                 <i class='flaticon-calendar'></i> {{blogPostContent.postDate}}
                             </li>
                         </ul>
-                        <h3><a routerLink="/{{blogPostContent.postLink}}">{{blogPostContent.postTitle}}</a></h3>
+                        <h3><a routerLink="/{{blogPostContent.path}}">{{blogPostContent.postTitle}}</a></h3>
                     </div>
                 </div>
             </div>
