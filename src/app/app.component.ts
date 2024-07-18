@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { afterRender, Component, OnInit } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
@@ -23,7 +23,12 @@ export class AppComponent implements OnInit {
 
     constructor(
         private router: Router
-    ) {}
+    ) {
+        afterRender(()=>{
+            // runs on client / browser
+            console.log("Constructor: Output is generated in both the server and the browser.");
+        })
+    }
 
     ngOnInit(){
         this.recallJsFuntions();
