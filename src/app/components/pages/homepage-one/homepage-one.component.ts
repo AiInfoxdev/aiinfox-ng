@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-homepage-one',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageOneComponent implements OnInit {
 
-  constructor() { }
+  constructor(private global: GlobalService ) { }
 
   ngOnInit(): void {
   }

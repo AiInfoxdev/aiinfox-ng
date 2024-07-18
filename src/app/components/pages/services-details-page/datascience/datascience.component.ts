@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-datascience',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './datascience.component.scss'
 })
 export class DatascienceComponent {
-
+  constructor(private global: GlobalService ) { }
 }

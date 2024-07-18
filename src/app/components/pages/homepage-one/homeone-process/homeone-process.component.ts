@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
 
 @Component({
     selector: 'app-homeone-process',
@@ -9,7 +9,9 @@ export class HomeoneProcessComponent implements OnInit, AfterViewInit {
 
     @Input('section') section: string = '';
 
-    constructor() { }
+    constructor(
+        private cdRef: ChangeDetectorRef
+    ) { }
 
     ngOnInit(): void {
     }
@@ -101,6 +103,8 @@ export class HomeoneProcessComponent implements OnInit, AfterViewInit {
                 }
             ]
         }
+
+        this.cdRef.detectChanges();
     }
 
     sectionTitle: sectionTitleContent[] = [];

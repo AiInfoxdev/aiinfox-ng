@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
     selector: 'app-about-page',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutPageComponent implements OnInit {
 
-    constructor() { }
+    constructor(
+        public global: GlobalService
+    ) { }
 
     ngOnInit(): void {
     }
