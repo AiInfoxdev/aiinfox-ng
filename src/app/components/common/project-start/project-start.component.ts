@@ -59,7 +59,8 @@ export class ProjectStartComponent implements OnInit {
 
     projectStartImage: Image[] = [
         {
-            img: 'assets/img/project-start1.png'
+            img: 'assets/img/project-start1.png',
+            alt:'Core Values'
         }
     ]
     projectStartContent: Content[] = [
@@ -138,6 +139,7 @@ export class ProjectStartComponent implements OnInit {
 }
 class Image {
     img : string;
+    alt:string;
 }
 class Content {
     title : string;

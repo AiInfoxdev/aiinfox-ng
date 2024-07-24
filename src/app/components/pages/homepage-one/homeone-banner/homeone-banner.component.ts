@@ -15,7 +15,7 @@ export class HomeoneBannerComponent implements OnInit {
     mainBannerContent: Content[] = [
         {
             title: 'WHERE AI & INNOVATION COLLIDE',
-            paragraphText: 'Make your life lively, relaxing, and more pleasant with the most powerful technology of the future. As among the top AI development companies in Mohali, we prioritize ethical considerations that play an important role in automation and artificial intelligence with much-needed vigilant planning and accountable development. ',
+            paragraphText: 'Make your life lively, relaxing, and more pleasant with the most powerful technology of the future. Ethical considerations play an important role in automation and artificial intelligence with much-needed vigilant planning and accountable development. ',
             defaultBtnIcon: 'flaticon-structure',
             defaultBtnText: 'About Us',
             defaultBtnLink: 'about-us',

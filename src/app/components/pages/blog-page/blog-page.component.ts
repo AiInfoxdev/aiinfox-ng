@@ -26,10 +26,11 @@ export class BlogPageComponent implements OnInit {
             if(data) {
                 this.blogData = data;
                 this.blogData.forEach((element: any) => {
-                    const route = { path: element.path, component: element.component, data: element }
+                    const route = { path: element.path, component: BlogDetailsPageComponent, data: element }
                     this.router.config.splice(this.router.config.length - 1, 0, route);
                 });
-                this.router.resetConfig(this.router.config);
+                console.log(this.blogData);
+                console.log(this.router.config);
             }
         });
     }

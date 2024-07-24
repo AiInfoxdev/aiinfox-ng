@@ -24,21 +24,21 @@ export class SolutionsComponent implements OnInit {
             icon: 'assets/img/creative.png',
             title: 'AI-Powered Solutions ',
             paragraphText: 'We exclusively offer a wide array of AI-powered solutions which includes predictive analytics, natural language processing, data analysis, automation, content creation, and whatnot.',
-            link: 'services',
+            link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'assets/img/intelligence.png',
             title: 'Data Science',
             paragraphText: 'We have expertise in collecting, mining, analyzing, visualization, and maintenance of information resulting in valuable insights. We help our clients get value and deep insights from their data.  ',
-            link: 'services',
+            link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'assets/img/machine.png',
             title: 'Machine Learning ',
             paragraphText: 'AiInfox can develop and implement machine learning models, which greatly helps in computerizing tasks, providing predictions, and generating creative content on its basis.  ',
-            link: 'services',
+            link: 'services-details',
             linkText: 'View Details'
         }
     ]

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-generativeai',
@@ -7,5 +6,5 @@ import { GlobalService } from 'src/app/_services/global.service';
   styleUrl: './generativeai.component.scss'
 })
 export class GenerativeaiComponent {
-  constructor(private global: GlobalService ) { }
+
 }

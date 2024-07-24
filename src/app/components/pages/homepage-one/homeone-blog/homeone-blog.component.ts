@@ -23,29 +23,26 @@ export class HomeoneBlogComponent implements OnInit {
         {
             postImg: 'assets/img/blog/img1.jpg',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
-            postLink: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
+            postLink: 'blog-details',
             postDate: 'April 30, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Manjeet',
-            alt: 'AI Development Companies in Mohali'
+            postAuthorName: 'Manjeet'
         },
         {
             postImg: 'assets/img/blog/img2.jpg',
             postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
-            postLink: 'elevate-your-brand-with-a-top-notch-web-design-company',
+            postLink: 'blog-details',
             postDate: 'April 28, 2024',
             postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Manjeet',
-            alt: 'Web Design Company in Mohali'
+            postAuthorName: 'Manjeet'
         },
         {
             postImg: 'assets/img/blog/img3.jpg',
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
-            postLink: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
+            postLink: 'blog-details',
             postDate: 'April 27, 2024',
             postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'Manjeet',
-            alt: 'Mobile App Development Company in Mohali'
+            postAuthorName: 'Manjeet'
         }
     ]
 
@@ -62,5 +59,4 @@ class blogPostContent {
     postDate : string;
     postAuthorImage : string;
     postAuthorName : string;
-    alt: string;
 }

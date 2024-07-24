@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-aihrms',
@@ -9,5 +8,5 @@ import { GlobalService } from 'src/app/_services/global.service';
   styleUrl: './aihrms.component.scss'
 })
 export class AihrmsComponent {
-  constructor(private global: GlobalService ) { }
+
 }

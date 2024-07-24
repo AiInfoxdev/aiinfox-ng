@@ -25,21 +25,25 @@ padding:20px 0px 10px;
 {
     color: #6b6b84;
     padding: 2px 0px;
-    flex: 0 0 49%;
-    max-width: 49%;
-    margin-left: 0px;
-    margin-right: 5px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 10px;
     list-style-type: none;
-    border: 1px solid #f0eae2;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    padding-right: 15px;
+}
+.webdesign-service img
+{
+    width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .digitalblock span
 {
     display: block;
-  padding: 10px;
+  border: 1px solid #f0eae2;
+  border-radius: 5px;
+  padding: 20px 20px 20px 60px;
   position: relative;
   background-color: var(--whiteColor);
   transition: var(--transition);
@@ -60,24 +64,6 @@ padding:20px 0px 10px;
 {
     margin-bottom: 3px;
     font-size: 18px;
-    position: relative;
-  left: 20px;
-}
-.digitalblock  h4::before {
-  content: "•"; /* Use any bullet character you prefer */
-  font-size: 30px;
-  line-height: 18px;
-  position: absolute;
-  left: -18px;
-  color:#ff5619;
-}
-@media(max-width:600px)
-{
-    .digitalblock li
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
 }
 .ptb-50
 {
@@ -101,28 +87,16 @@ padding:20px 0px 10px;
 }
 .single-process-box
 {
-  margin-bottom: 30px;
+    margin-bottom: 30px;
   background-color: var(--whiteColor);
   transition: var(--transition);
   border: 1px solid #f5f3f2;
   border-radius: 5px;
-  padding: 0px 0px;
+  padding: 50px 20px;
   text-align: center;
   position: relative;
   z-index: 1;
 }
-.single-process-box img
-  {
-    border-radius: 5px 5px 0px 0px;
-  }
-  .single-process-box h3
-  {
-    padding: 20px 20px 0px;
-  }
-  .single-process-box p
-  {
-    padding: 0px 20px 20px;
-  }
 .single-process-box:hover
 {
     border-color: var(--mainColor);

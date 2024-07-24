@@ -1,7 +1,7 @@
 <section class="services-area ptb-100 bg-f1f8fb">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <span class="sub-title"><img src="assets/img/star-icon.png" alt="AI Services"> {{sectionTitleContent.subTitle}}</span>
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
             <h2>{{sectionTitleContent.title}}</h2>
             <p>{{sectionTitleContent.paragraphText}}</p>
         </div>
@@ -10,7 +10,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let ServicesBoxContent of singleServicesBox;">
                 <div class="single-services-box">
                     <div class="icon">
-                        <img [src]="ServicesBoxContent.icon" alt={{ServicesBoxContent.alt}}>
+                        <img [src]="ServicesBoxContent.icon" alt="image">
                     </div>
                     <h3><a routerLink="/{{ServicesBoxContent.link}}">{{ServicesBoxContent.title}}</a></h3>
                     <p>{{ServicesBoxContent.paragraphText}}</p>
@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div class="circle-shape2"><img src="assets/img/shape/circle-shape2.png" alt="AI services in Mohali"></div>
+    <div class="circle-shape2"><img src="assets/img/shape/circle-shape2.png" alt="image"></div>
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
