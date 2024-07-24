@@ -23,40 +23,44 @@ export class HomeoneBlogComponent implements OnInit {
         {
             postImg: 'assets/img/blog/img1.jpg',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
-            postLink: 'blog-details',
+            postLink: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             postDate: 'April 30, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Manjeet'
+            postAuthorName: 'Manjeet',
+            alt: 'AI Development Companies in Mohali'
         },
         {
             postImg: 'assets/img/blog/img2.jpg',
             postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
-            postLink: 'blog-details',
+            postLink: 'elevate-your-brand-with-a-top-notch-web-design-company',
             postDate: 'April 28, 2024',
             postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Manjeet'
+            postAuthorName: 'Manjeet',
+            alt: 'Web Design Company in Mohali'
         },
         {
             postImg: 'assets/img/blog/img3.jpg',
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
-            postLink: 'blog-details',
+            postLink: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             postDate: 'April 27, 2024',
             postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'Manjeet'
+            postAuthorName: 'Manjeet',
+            alt: 'Mobile App Development Company in Mohali'
         }
     ]
 
 }
 class sectionTitleContent {
-    subTitle : string;
-    title : string;
-    paragraphText : string;
+    subTitle: string;
+    title: string;
+    paragraphText: string;
 }
 class blogPostContent {
-    postImg : string;
-    postLink : string;
-    postTitle : string;
-    postDate : string;
-    postAuthorImage : string;
-    postAuthorName : string;
+    postImg: string;
+    postLink: string;
+    postTitle: string;
+    postDate: string;
+    postAuthorImage: string;
+    postAuthorName: string;
+    alt: string;
 }

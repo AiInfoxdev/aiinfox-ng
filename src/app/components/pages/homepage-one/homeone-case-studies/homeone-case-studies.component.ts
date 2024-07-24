@@ -18,20 +18,33 @@ export class HomeoneCaseStudiesComponent implements OnInit {
             title: 'HRMS',
             paragraphText1: 'It is a suite of software developed by us that helps organizations manage internal human resource functions. ',
             paragraphText2: 'It is loaded with tons of features that help human resource personnel easily and quickly automate time-consuming and tedious processes and activities.',
-            link: 'case-studies-details',
+            link: 'ai-hrms',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
-            img: 'assets/img/case-study/img1.jpg'
+            img: 'assets/img/case-study/img1.jpg',
+            alt: 'Human Resource Management System'
         },
         {
             subTitle: 'Our Projects',
             title: 'HMS',
             paragraphText1: 'The Hospital Management system is a complete integrated suite of software specially designed to carry out all medical services, inventory tracking, supply chain optimization and staff management in a smooth way.',
             paragraphText2: '',
-            link: 'case-studies-details',
+            link: 'ai-hms',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
-            img: 'assets/img/case-study/img2.jpg'
+            img: 'assets/img/case-study/img2.jpg',
+            alt: 'Hospital Management System'
+        },
+        {
+            subTitle: 'Our Projects',
+            title: 'Classroom Chatbot',
+            paragraphText1: 'A classroom chatbot is a smart tool made for schools. It works on computers or phones and helps students learn better. It fits into digital learning tools or works alone, giving students interactive help and support as they learn.',
+            paragraphText2: '',
+            link: 'ai-chatbot',
+            linkText: 'Details More',
+            linkIcon: 'flaticon-view',
+            img: 'assets/img/courses/class-mainbanner.png',
+            alt: 'Classroom Chatbot'
         }
     ]
 
@@ -45,4 +58,5 @@ class singleCaseStudyItemContent {
     linkText : string;
     linkIcon : string;
     img : string;
+    alt : string;
 }
