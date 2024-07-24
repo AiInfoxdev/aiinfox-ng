@@ -75,66 +75,6 @@ export class GlobalService {
             path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             component: BusinessdataComponent 
         },
-        {
-            postImg: 'assets/img/blog/img7.jpg',
-            postTitle: 'The data-driven approach to understanding',
-            postLink: 'blog-details',
-            postDate: 'April 30, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries4',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img8.jpg',
-            postTitle: 'Finding the blocks of neighboring fields',
-            postLink: 'blog-details',
-            postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Sarah Taylor',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries5',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img9.jpg',
-            postTitle: 'Data into Your Enterprise to Drive Insights',
-            postLink: 'blog-details',
-            postDate: 'April 27, 2024',
-            postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'David Warner',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries6',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img10.jpg',
-            postTitle: 'Introduction to Recommendation Engines',
-            postLink: 'blog-details',
-            postDate: 'April 30, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries7',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img11.jpg',
-            postTitle: '5 Things You Should Know About Data',
-            postLink: 'blog-details',
-            postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Sarah Taylor',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries8',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img12.jpg',
-            postTitle: 'Which Language to Choose for Deep Learning?',
-            postLink: 'blog-details',
-            postDate: 'April 27, 2024',
-            postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'David Warner',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries9',
-            component: BlogDetailsPageComponent
-        }
     ];
 
     get currentPageMETA(): any {
