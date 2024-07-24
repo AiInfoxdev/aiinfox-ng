@@ -24,42 +24,49 @@ export class ServicesPageComponent implements OnInit {
         {
             icon: 'flaticon-rocket',
             title: 'Ai and Machine Learning',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            paragraphText: 'AiInfox helps you primarily empower your business. With the recent developments in AI and machine learning technologies, a major impact can be seen on society and various industries...',
             link: 'ai-machine-learning',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-laptop',
             title: 'Generative Ai',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            paragraphText: 'The newest technology generative AI has entered the world and is responsible for making huge changes. Enterprises want to embrace generative AI services but as it is a new technology... ',
             link: 'generative-ai',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-money',
-            title: 'E-Commerce Platforms',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'Data Science',
+            paragraphText: 'AiInfox is known for specialising in data science. We are known to provide the best data science services which is a great combination of business analytics, machine learning...',
             link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-segmentation',
-            title: 'Research',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'Mobile App Development',
+            paragraphText: 'Our highly accomplished developers are known to have experience and knowledge of the latest technologies as a result they make sure your app is built as per industry standards...',
             link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-analytics',
-            title: 'Analytics',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'Web Development',
+            paragraphText: 'n today’s digitalized age, owning a website has become essential. It acts as a doorway to reach both local and global audiences offering widespread opportunities to promote...',
             link: 'services-details',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-settings',
-            title: 'Technology',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna adipiscing aliqua.',
+            title: 'Web Design',
+            paragraphText: 'We professional web designers at AiInfox are passionate about creating designs that speak your mind and make your thoughts turn into reality Every business is different and has different requirements...',
+            link: 'services-details',
+            linkText: 'View Details'
+        },
+        {
+            icon: 'flaticon-settings',
+            title: 'Digital Marketing and SEO',
+            paragraphText: 'With our expert SEO services, you can elevate your online visibility. We have a team of thorough professionals who are experts in employing industry-best practices...',
             link: 'services-details',
             linkText: 'View Details'
         }

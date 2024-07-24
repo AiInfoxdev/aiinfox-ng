@@ -3,6 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
+import { DiscoverhowtopaiComponent } from '../components/pages/blog-details-page/discoverhowtopai/discoverhowtopai.component';
+import { BlogDetailsPageComponent } from '../components/pages/blog-details-page/blog-details-page.component';
+import { ConversionrateComponent } from '../components/pages/blog-details-page/Conversionrate/conversionrate.component';
+import { BusinessdataComponent } from '../components/pages/blog-details-page/Businessdata/businessdata.component';
 
 @Injectable({
     providedIn: 'root'
@@ -21,10 +25,10 @@ export class GlobalService {
                 this.metaService.removeTag('name="keywords"');
                 this.metaService.removeTag('name="description"');
                 this.metaService.addTags([
-                    { name: 'keywords', content: this.currentPageMETA.keywords },
-                    { name: 'description', content: this.currentPageMETA.description }
+                    { name: 'keywords', content: this.currentPageMETA?.keywords },
+                    { name: 'description', content: this.currentPageMETA?.description }
                 ]);
-                this.titleService.setTitle(this.currentPageMETA.title);
+                this.titleService.setTitle(this.currentPageMETA?.title);
             }
         });
     }
@@ -42,31 +46,34 @@ export class GlobalService {
 
     blogDataOrig: any[] = [
         {
-            postImg: 'assets/img/blog/img4.jpg',
-            postTitle: 'The Data Surrounding Higher Education',
+            postImg: 'assets/img/blog/aiblog.jpg',
+            postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'blog-details',
             postDate: 'April 30, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'Alex Morgan',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries1',
+            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
+            component: DiscoverhowtopaiComponent
         },
         {
-            postImg: 'assets/img/blog/img5.jpg',
-            postTitle: 'Conversion Rate the Sales Funnel Optimization',
+            postImg: 'assets/img/blog/designus.jpg',
+            postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
             postLink: 'blog-details',
             postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user2.jpg',
+            postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'Sarah Taylor',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries2',
+            path: 'elevate-your-brand-with-a-top-notch-web-design-company',
+            component: ConversionrateComponent
         },
         {
-            postImg: 'assets/img/blog/img6.jpg',
-            postTitle: 'Business Data is changing the world’s Energy',
+            postImg: 'assets/img/blog/mobileapp.jpg',
+            postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'blog-details',
             postDate: 'April 27, 2024',
-            postAuthorImage: 'assets/img/user3.jpg',
+            postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'David Warner',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries3',
+            path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
+            component: BusinessdataComponent 
         },
         {
             postImg: 'assets/img/blog/img7.jpg',
@@ -76,6 +83,7 @@ export class GlobalService {
             postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'Alex Morgan',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries4',
+            component: BlogDetailsPageComponent
         },
         {
             postImg: 'assets/img/blog/img8.jpg',
@@ -85,6 +93,7 @@ export class GlobalService {
             postAuthorImage: 'assets/img/user2.jpg',
             postAuthorName: 'Sarah Taylor',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries5',
+            component: BlogDetailsPageComponent
         },
         {
             postImg: 'assets/img/blog/img9.jpg',
@@ -94,6 +103,7 @@ export class GlobalService {
             postAuthorImage: 'assets/img/user3.jpg',
             postAuthorName: 'David Warner',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries6',
+            component: BlogDetailsPageComponent
         },
         {
             postImg: 'assets/img/blog/img10.jpg',
@@ -103,6 +113,7 @@ export class GlobalService {
             postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'Alex Morgan',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries7',
+            component: BlogDetailsPageComponent
         },
         {
             postImg: 'assets/img/blog/img11.jpg',
@@ -112,6 +123,7 @@ export class GlobalService {
             postAuthorImage: 'assets/img/user2.jpg',
             postAuthorName: 'Sarah Taylor',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries8',
+            component: BlogDetailsPageComponent
         },
         {
             postImg: 'assets/img/blog/img12.jpg',
@@ -121,6 +133,7 @@ export class GlobalService {
             postAuthorImage: 'assets/img/user3.jpg',
             postAuthorName: 'David Warner',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries9',
+            component: BlogDetailsPageComponent
         }
     ];
 
