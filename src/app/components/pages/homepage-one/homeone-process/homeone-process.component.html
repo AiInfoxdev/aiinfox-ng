@@ -1,6 +1,6 @@
 <div class="container">
     <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-        <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
+        <span class="sub-title"><img src="assets/img/star-icon.png" alt="AI Process "> {{sectionTitleContent.subTitle}}</span>
         <h2>{{sectionTitleContent.title}}</h2>
         <p>{{sectionTitleContent.paragraphText}}</p>
     </div>
@@ -10,7 +10,7 @@
             <div class="single-process-box">
                 <div class="number">{{processBoxContent.number}}</div>
                 <div class="image">
-                    <img [src]="processBoxContent.img" alt="image">
+                    <img [src]="processBoxContent.img" alt={{processBoxContent.alt}}>
                 </div>
                 <h3>{{processBoxContent.title}}</h3>
                 <p>{{processBoxContent.paragraphText}}</p>
@@ -18,4 +18,4 @@
         </div>
     </div>
 </div>
-<div class="circle-shape1"><img src="assets/img/shape/circle-shape1.png" alt="image"></div>
+<div class="circle-shape1"><img src="assets/img/shape/circle-shape1.png" alt="AI Services in Mohali"></div>

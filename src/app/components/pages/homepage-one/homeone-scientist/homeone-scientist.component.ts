@@ -31,7 +31,8 @@ export class HomeoneScientistComponent implements OnInit {
             instagramLink: '#',
             instagramIcon: 'bx bxl-instagram',
             linkedinLink: '#',
-            linkedinIcon: 'bx bxl-linkedin'
+            linkedinIcon: 'bx bxl-linkedin',
+            alt: 'Marie Curie'
         },
         {
             img: 'assets/img/scientist/img2.png',
@@ -44,7 +45,8 @@ export class HomeoneScientistComponent implements OnInit {
             instagramLink: '#',
             instagramIcon: 'bx bxl-instagram',
             linkedinLink: '#',
-            linkedinIcon: 'bx bxl-linkedin'
+            linkedinIcon: 'bx bxl-linkedin',
+            alt: 'Marie Curie'
         },
         {
             img: 'assets/img/scientist/img3.png',
@@ -57,7 +59,8 @@ export class HomeoneScientistComponent implements OnInit {
             instagramLink: '#',
             instagramIcon: 'bx bxl-instagram',
             linkedinLink: '#',
-            linkedinIcon: 'bx bxl-linkedin'
+            linkedinIcon: 'bx bxl-linkedin',
+            alt: 'Marie Curie'
         },
         {
             img: 'assets/img/scientist/img4.png',
@@ -70,7 +73,8 @@ export class HomeoneScientistComponent implements OnInit {
             instagramLink: '#',
             instagramIcon: 'bx bxl-instagram',
             linkedinLink: '#',
-            linkedinIcon: 'bx bxl-linkedin'
+            linkedinIcon: 'bx bxl-linkedin',
+            alt: 'Marie Curie'
         }
     ]
 
@@ -92,4 +96,5 @@ class scientistBoxContent {
     instagramIcon: string;
     linkedinLink: string;
     linkedinIcon: string;
+    alt: string;
 }

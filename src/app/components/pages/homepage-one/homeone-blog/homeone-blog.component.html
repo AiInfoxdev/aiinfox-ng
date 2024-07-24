@@ -1,7 +1,7 @@
 <section class="blog-area pt-100 pb-70 bg-fffbf5">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Our Blog"> {{sectionTitleContent.subTitle}}</span>
             <h2>{{sectionTitleContent.title}}</h2>
             <p>{{sectionTitleContent.paragraphText}}</p>
         </div>
@@ -11,7 +11,7 @@
                 <div class="single-blog-post">
                     <div class="post-image">
                         <a routerLink="/{{blogPostContent.postLink}}">
-                            <img [src]="blogPostContent.postImg" alt="image">
+                            <img [src]="blogPostContent.postImg" alt={{blogPostContent.alt}}>
                         </a>
                     </div>
 

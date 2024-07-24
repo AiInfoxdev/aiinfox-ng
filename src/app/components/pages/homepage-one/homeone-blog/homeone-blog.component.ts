@@ -26,7 +26,8 @@ export class HomeoneBlogComponent implements OnInit {
             postLink: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             postDate: 'April 30, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Manjeet'
+            postAuthorName: 'Manjeet',
+            alt: 'AI Development Companies in Mohali'
         },
         {
             postImg: 'assets/img/blog/img2.jpg',
@@ -34,7 +35,8 @@ export class HomeoneBlogComponent implements OnInit {
             postLink: 'elevate-your-brand-with-a-top-notch-web-design-company',
             postDate: 'April 28, 2024',
             postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Manjeet'
+            postAuthorName: 'Manjeet',
+            alt: 'Web Design Company in Mohali'
         },
         {
             postImg: 'assets/img/blog/img3.jpg',
@@ -42,7 +44,8 @@ export class HomeoneBlogComponent implements OnInit {
             postLink: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             postDate: 'April 27, 2024',
             postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'Manjeet'
+            postAuthorName: 'Manjeet',
+            alt: 'Mobile App Development Company in Mohali'
         }
     ]
 
@@ -59,4 +62,5 @@ class blogPostContent {
     postDate : string;
     postAuthorImage : string;
     postAuthorName : string;
+    alt: string;
 }
