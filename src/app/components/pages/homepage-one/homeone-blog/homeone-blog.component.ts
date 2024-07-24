@@ -51,16 +51,16 @@ export class HomeoneBlogComponent implements OnInit {
 
 }
 class sectionTitleContent {
-    subTitle: string;
-    title: string;
-    paragraphText: string;
+    subTitle : string;
+    title : string;
+    paragraphText : string;
 }
 class blogPostContent {
-    postImg: string;
-    postLink: string;
-    postTitle: string;
-    postDate: string;
-    postAuthorImage: string;
-    postAuthorName: string;
+    postImg : string;
+    postLink : string;
+    postTitle : string;
+    postDate : string;
+    postAuthorImage : string;
+    postAuthorName : string;
     alt: string;
 }

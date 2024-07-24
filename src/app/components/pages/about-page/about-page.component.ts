@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Meta } from '@angular/platform-browser';
-import { Title } from "@angular/platform-browser";
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
     selector: 'app-about-page',
@@ -10,13 +9,10 @@ import { Title } from "@angular/platform-browser";
 export class AboutPageComponent implements OnInit {
 
     constructor(
-        private metaService: Meta,
-        private titleService: Title
+        public global: GlobalService
     ) { }
 
     ngOnInit(): void {
-        this.metaService.addTag({ property: 'og:title', content: 'About Us'});
-        this.titleService.setTitle("AiINFOX:: About Us");
     }
 
     pageTitleArea: pageTitle[] = [

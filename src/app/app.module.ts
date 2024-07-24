@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -82,6 +82,8 @@ import { MobileappdevelopmentComponent } from './components/pages/services-detai
 import { WebdesignComponent } from './components/pages/services-details-page/webdesign/webdesign.component';
 import { WebdevelopmentComponent } from './components/pages/services-details-page/webdevelopment/webdevelopment.component';
 import { DiscoverhowtopaiComponent } from './components/pages/blog-details-page/discoverhowtopai/discoverhowtopai.component';
+import{ConversionrateComponent} from './components/pages/blog-details-page/Conversionrate/conversionrate.component';
+import{BusinessdataComponent} from './components/pages/blog-details-page/Businessdata/businessdata.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LandingnavbarComponent } from './landingpages/landingnavbar/landingnavbar.component';
 import { LandingfooComponent } from './landingpages/landingfoo/landingfoo.component';
@@ -170,6 +172,8 @@ import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml
     WebdesignComponent,
     WebdevelopmentComponent,
     DiscoverhowtopaiComponent,
+    ConversionrateComponent,
+    BusinessdataComponent,
     LandingnavbarComponent,
     LandingfooComponent,
     GenAiDevelopmentComponent,
@@ -180,7 +184,9 @@ import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    provideClientHydration()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

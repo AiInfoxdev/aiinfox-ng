@@ -70,7 +70,7 @@
         .entry-meta {
             ul {
                 padding-left: 0;
-                margin-bottom: 0;
+                margin-bottom: 20;
                 list-style-type: none;
     
                 li {
@@ -493,7 +493,7 @@ blockquote, .blockquote {
     .prev-title {
         display: inline-block;
         font: {
-            weight: 800;
+            weight: 400;
             size: var(--fontSize);
         };
     }
@@ -503,8 +503,8 @@ blockquote, .blockquote {
         text-transform: capitalize;
         margin-top: 7px;
         font: {
-            weight: 600;
-            size: 16px;
+            weight: 400;
+            size: 14px;
         };
     }
 }
@@ -590,7 +590,7 @@ blockquote, .blockquote {
     .next-title {
         display: inline-block;
         font: {
-            weight: 800;
+            weight: 400;
             size: var(--fontSize);
         };
     }
@@ -600,8 +600,8 @@ blockquote, .blockquote {
         text-transform: capitalize;
         margin-top: 7px;
         font: {
-            weight: 600;
-            size: 16px;
+            weight: 400;
+            size: 14px;
         };
     }
 }
@@ -748,8 +748,8 @@ blockquote, .blockquote {
             border-radius: 3px;
             color: var(--blackColor);
             font: {
-                weight: 600;
-                size: 15px;
+                weight: 400;
+                size: 14px;
             };
             &::placeholder {
                 transition: var(--transition);

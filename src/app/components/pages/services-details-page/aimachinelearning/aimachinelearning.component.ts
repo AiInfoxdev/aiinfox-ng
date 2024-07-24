@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-aimachinelearning',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AimachinelearningComponent {
 
+  constructor(private global: GlobalService ) { }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-digitalmarketingseo',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './digitalmarketingseo.component.scss'
 })
 export class DigitalmarketingseoComponent {
-
+  constructor(private global: GlobalService ) { }
 }
