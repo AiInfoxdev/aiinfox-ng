@@ -89,6 +89,7 @@ import { LandingnavbarComponent } from './landingpages/landingnavbar/landingnavb
 import { LandingfooComponent } from './landingpages/landingfoo/landingfoo.component';
 import { GenAiDevelopmentComponent } from './landingpages/gen-ai-development/gen-ai-development.component';
 import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml-development.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -177,12 +178,13 @@ import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml
     LandingnavbarComponent,
     LandingfooComponent,
     GenAiDevelopmentComponent,
-    AiMlDevelopmentComponent
+    AiMlDevelopmentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

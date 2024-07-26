@@ -15,8 +15,8 @@ export class HomeoneScientistComponent implements OnInit {
     sectionTitle: sectionTitleContent[] = [
         {
             subTitle: "Team Members",
-            title: 'Our Data Scientist',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            title: 'Our Team',
+            paragraphText: 'Meet the AiInfox Team: Innovators and Experts Driving AI Excellence in Mohali.'
         }
     ]
     singleScientistBox: scientistBoxContent[] = [

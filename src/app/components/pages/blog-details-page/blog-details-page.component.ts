@@ -1,5 +1,7 @@
 import { Component, ComponentFactoryResolver, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { EmailService } from 'src/app/_services/email.service';
 
 @Component({
     selector: 'app-blog-details-page',
@@ -7,14 +9,25 @@ import { ActivatedRoute, Router } from '@angular/router';
     styleUrls: ['./blog-details-page.component.scss']
 })
 export class BlogDetailsPageComponent implements OnInit {
-
+    commentForm: any;
     constructor(
         private router: Router,
-        private route:ActivatedRoute
+        private route: ActivatedRoute,
+        private emailService: EmailService
     ) { }
 
     ngOnInit(): void {
         console.log(this.route.snapshot.data);
+        this.initCommentForm();
+    }
+    initCommentForm() {
+        this.commentForm = new FormGroup({
+            name: new FormControl(''),
+            email: new FormControl(''),
+            website: new FormControl(''),
+            message: new FormControl(''),
+            isSave: new FormControl(false)
+        })
     }
 
     pageTitleArea: pageTitle[] = [
@@ -24,8 +37,26 @@ export class BlogDetailsPageComponent implements OnInit {
         }
     ]
 
+
+    onSend() {
+        this.emailService.sendEmail(this.commentForm.value).then(
+            (response) => {
+                console.log('Email sent successfully', response.text);
+                this.commentForm.reset();
+                //   alert('Email sent successfully');
+            },
+            (error) => {
+                console.log('Failed to send email', error);
+                //   alert('Failed to send email');
+            }
+        );
+
+    }
 }
+
+
+
 class pageTitle {
-    title : string;
-    subTitle : string;
+    title: string;
+    subTitle: string;
 }

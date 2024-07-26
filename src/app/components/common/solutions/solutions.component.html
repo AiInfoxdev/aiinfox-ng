@@ -1,7 +1,7 @@
 <section class="solutions-area pb-70">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Our Expertise"> {{sectionTitleContent.subTitle}}</span>
             <h2>{{sectionTitleContent.title}}</h2>
             <p>{{sectionTitleContent.paragraphText}}</p>
         </div>
@@ -10,7 +10,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let solutionsBoxContent of singleSolutionsBox;">
                 <div class="single-solutions-box">
                     <div class="icon">
-                        <img [src]="solutionsBoxContent.icon" alt="image">
+                        <img [src]="solutionsBoxContent.icon" alt={{solutionsBoxContent.alt}}>
                       
                     </div>
                     <h3><a routerLink="/{{solutionsBoxContent.link}}">{{solutionsBoxContent.title}}</a></h3>

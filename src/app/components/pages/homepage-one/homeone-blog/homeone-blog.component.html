@@ -7,10 +7,10 @@
         </div>
 
         <div class="row align-items-center">
-            <div class="col-lg-4 col-md-6" *ngFor="let blogPostContent of singleBlogPost;">
+            <div class="col-lg-4 col-md-6" *ngFor="let blogPostContent of blogData;">
                 <div class="single-blog-post">
                     <div class="post-image">
-                        <a routerLink="/{{blogPostContent.postLink}}">
+                        <a routerLink="/{{blogPostContent.path}}">
                             <img [src]="blogPostContent.postImg" alt={{blogPostContent.alt}}>
                         </a>
                     </div>
@@ -19,7 +19,7 @@
                         <ul class="post-meta d-flex justify-content-between align-items-center">
                             <li>
                                 <div class="post-author d-flex align-items-center">
-                                    <img [src]="blogPostContent.postAuthorImage" class="rounded-circle" alt="image">
+                                    <img [src]="blogPostContent.postAuthorImage" class="rounded-circle" alt= {{blogPostContent.authorAlt}}>
                                     <span>{{blogPostContent.postAuthorName}}</span>
                                 </div>
                             </li>
@@ -27,13 +27,13 @@
                                 <i class='flaticon-calendar'></i> {{blogPostContent.postDate}}
                             </li>
                         </ul>
-                        <h3><a routerLink="/{{blogPostContent.postLink}}">{{blogPostContent.postTitle}}</a></h3>
+                        <h3><a routerLink="/{{blogPostContent.path}}">{{blogPostContent.postTitle}}</a></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="vector-shape1" data-speed="0.06" data-revert="true"><img src="assets/img/shape/vector-shape1.png" alt="image"></div>
-    <div class="vector-shape2" data-speed="0.06" data-revert="true"><img src="assets/img/shape/vector-shape2.png" alt="image"></div>
+    <div class="vector-shape1" data-speed="0.06" data-revert="true"><img src="assets/img/shape/vector-shape1.png" alt="AI Blogs"></div>
+    <div class="vector-shape2" data-speed="0.06" data-revert="true"><img src="assets/img/shape/vector-shape2.png" alt="AI Blogs"></div>
 </section>

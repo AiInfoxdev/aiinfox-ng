@@ -38,13 +38,24 @@ export class HomeoneCaseStudiesComponent implements OnInit {
         {
             subTitle: 'Our Projects',
             title: 'Classroom Chatbot',
-            paragraphText1: 'A classroom chatbot is a smart tool made for schools. It works on computers or phones and helps students learn better. It fits into digital learning tools or works alone, giving students interactive help and support as they learn.',
+            paragraphText1: 'A classroom AI chatbot is a smart tool made for schools. It works on computers or phones and helps students learn better. It fits into digital learning tools or works alone, giving students interactive help and support as they learn.',
             paragraphText2: '',
             link: 'ai-chatbot',
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
             img: 'assets/img/courses/class-mainbanner.png',
             alt: 'Classroom Chatbot'
+        },
+        {
+            subTitle: 'Our Projects',
+            title: 'Interview Chatbot',
+            paragraphText1: 'Interview Chatbot is an AI-powered tool that assists in the recruitment process by analyzing resumes and generating custom interview questions based on a candidates specific skills and experiences.',
+            paragraphText2: '',
+            link: 'ai-chatbot',
+            linkText: 'Details More',
+            linkIcon: 'flaticon-view',
+            img: 'assets/img/courses/interview-main.png',
+            alt: 'Interview Chatbot'
         }
     ]
 

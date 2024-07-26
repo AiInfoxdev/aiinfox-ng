@@ -22,7 +22,7 @@ export class HomeoneProcessComponent implements OnInit, AfterViewInit {
                 {
                     subTitle: "Fly High with AiInfox",
                     title: 'Why AiInfox',
-                    paragraphText: 'AiInfox is becoming stronger day by day and every team member who is thorough and professional is contributing towards the company success'
+                    paragraphText: 'AiInfox is becoming stronger day by day and every team member who is thorough and professional is contributing towards the company success.'
                 }
             ];
 

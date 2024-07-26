@@ -15,8 +15,8 @@ export class AboutpageHistoryComponent implements OnInit {
     sectionTitle: sectionTitleContent[] = [
         {
             subTitle: "Our History",
-            title: 'History Begins in 2021',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            title: 'History Begins in 2022',
+            paragraphText: `AiInfox is dedicated to transforming organizations through cutting-edge technology, and it has grown rapidly to become a major provider of <a href=""><b>AI and Machine Learning Services<b></a>.`
         }
     ]
     historyTimeline: TimelineBlock[] = [

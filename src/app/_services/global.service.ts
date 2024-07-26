@@ -49,9 +49,11 @@ export class GlobalService {
             postImg: 'assets/img/blog/aiblog.jpg',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'blog-details',
-            postDate: 'April 30, 2024',
+            postDate: 'July 24, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan',
+            alt:'AI Development Company',
+            postAuthorName: 'Karan',
+            authorAlt:'Karan',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             component: DiscoverhowtopaiComponent
         },
@@ -59,9 +61,11 @@ export class GlobalService {
             postImg: 'assets/img/blog/designus.jpg',
             postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
             postLink: 'blog-details',
-            postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Sarah Taylor',
+            postDate: 'July 10 2024',
+            postAuthorImage: 'assets/img/user2.jpg',
+            alt:'Web Design Company',
+            authorAlt:'Rushali',
+            postAuthorName: 'Rushali',
             path: 'elevate-your-brand-with-a-top-notch-web-design-company',
             component: ConversionrateComponent
         },
@@ -69,9 +73,11 @@ export class GlobalService {
             postImg: 'assets/img/blog/mobileapp.jpg',
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'blog-details',
-            postDate: 'April 27, 2024',
+            postDate: 'June 28, 2024',
+            alt:'App Development Company',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'David Warner',
+            postAuthorName: 'Manjeet',
+            authorAlt:'Manjeet',
             path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             component: BusinessdataComponent 
         },
@@ -157,7 +163,7 @@ export class GlobalService {
                     description: 'Services Description',
                     keywords: 'Services Keywords'
                 };
-            case '/contact':
+            case '/contact-us':
                 return {
                     title: 'Contact Us for Custom AI Solutions',
                     description: 'Explore the ideal AI solutions to encourage innovative ideas. To discuss your project requirements with India top AI specialists, get in touch with us.',
