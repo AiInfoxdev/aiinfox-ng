@@ -22,7 +22,8 @@ export class HomeoneCaseStudiesComponent implements OnInit {
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
             img: 'assets/img/case-study/img1.jpg',
-            alt: 'Human Resource Management System'
+            alt: 'Human Resource Management System',
+            id:'human-resource management system'
         },
         {
             subTitle: 'Our Projects',
@@ -33,7 +34,8 @@ export class HomeoneCaseStudiesComponent implements OnInit {
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
             img: 'assets/img/case-study/img2.jpg',
-            alt: 'Hospital Management System'
+            alt: 'Hospital Management System',
+            id: 'hospital-management-system'
         },
         {
             subTitle: 'Our Projects',
@@ -44,7 +46,8 @@ export class HomeoneCaseStudiesComponent implements OnInit {
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
             img: 'assets/img/courses/class-mainbanner.png',
-            alt: 'Classroom Chatbot'
+            alt: 'Classroom Chatbot',
+            id: 'classroom-chatbot'
         },
         {
             subTitle: 'Our Projects',
@@ -55,7 +58,8 @@ export class HomeoneCaseStudiesComponent implements OnInit {
             linkText: 'Details More',
             linkIcon: 'flaticon-view',
             img: 'assets/img/courses/interview-main.png',
-            alt: 'Interview Chatbot'
+            alt: 'Interview Chatbot',
+            id:'interview-chatbot'
         }
     ]
 
@@ -70,4 +74,5 @@ class singleCaseStudyItemContent {
     linkIcon : string;
     img : string;
     alt : string;
+    id:string;
 }

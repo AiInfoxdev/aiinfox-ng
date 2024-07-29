@@ -11,7 +11,6 @@ export class BusinessdataComponent {
   commentForm: any;
   constructor(private emailService: EmailService) { }
   ngOnInit() {
-    console.log("bussiness data")
     this.initCommentForm();
   }
 

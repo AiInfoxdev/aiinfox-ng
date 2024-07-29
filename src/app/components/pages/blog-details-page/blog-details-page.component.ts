@@ -17,7 +17,6 @@ export class BlogDetailsPageComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
-        console.log(this.route.snapshot.data);
         this.initCommentForm();
     }
     initCommentForm() {
@@ -41,7 +40,6 @@ export class BlogDetailsPageComponent implements OnInit {
     onSend() {
         this.emailService.sendEmail(this.commentForm.value).then(
             (response) => {
-                console.log('Email sent successfully', response.text);
                 this.commentForm.reset();
                 //   alert('Email sent successfully');
             },

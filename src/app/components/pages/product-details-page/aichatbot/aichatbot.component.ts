@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-aichatbot',
@@ -8,27 +8,35 @@ import { Router } from '@angular/router';
   templateUrl: './aichatbot.component.html',
   styleUrl: './aichatbot.component.scss'
 })
-export class AichatbotComponent implements OnInit, AfterViewInit  {
-  constructor(private route:Router  ) { }
+export class AichatbotComponent implements OnInit{
+  @ViewChild('classroomChatbotSection', { static: true }) classroomChatbotSection!: ElementRef;
+  @ViewChild('interviewChatbotSection', { static: true }) interviewChatbotSection!: ElementRef;
+  constructor(private route:Router,private router: ActivatedRoute  ) { }
   
-  ngOnInit() {
+
+    ngOnInit(): void {
+      this.router.queryParams.subscribe(params => {
+          const section = params['section'];
+          if (section === 'classroom-chatbot') {
+              this.scrollToSection(this.classroomChatbotSection);
+          } else if (section === 'interview-chatbot') {
+              this.scrollToSection(this.interviewChatbotSection);
+          }
+      });
   }
+
+
+  scrollToSection(section: ElementRef): void {
+    if(section){
+      section.nativeElement.scrollIntoView({ behavior: 'smooth' });
+
+    }
+  }
+  
 
   onClickBook(){
     this.route.navigate(['/contact-us'])
 
-  }
-
-  ngAfterViewInit() {
-    this.scrollToSection();
-  }
-
-  scrollToSection() {
-    const element = document.getElementById('interview-chatbot-section');
-    if (element) {
-      console.log("element",element)
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
   }
 
 }

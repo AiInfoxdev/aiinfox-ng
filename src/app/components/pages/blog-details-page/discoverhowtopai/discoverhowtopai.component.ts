@@ -11,7 +11,6 @@ export class DiscoverhowtopaiComponent implements OnInit {
   commentForm: any;
   constructor(private emailService: EmailService) { }
   ngOnInit() {
-    console.log("discover page......")
     this.initCommentForm();
   }
 

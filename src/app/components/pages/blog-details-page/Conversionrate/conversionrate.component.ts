@@ -11,7 +11,6 @@ export class ConversionrateComponent {
   commentForm: any;
   constructor(private emailService: EmailService) { }
   ngOnInit() {
-    console.log("conversion page......")
     this.initCommentForm();
   }
 
