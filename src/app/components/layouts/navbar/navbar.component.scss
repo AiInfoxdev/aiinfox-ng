@@ -1,83 +1,121 @@
 .wilo-responsive-nav {
     display: none;
 }
+
 .wilo-nav {
     .container-fluid {
         padding: {
             left: 50px;
             right: 50px;
-        };
+        }
+
+        ;
     }
+
     .navbar {
         position: inherit;
+
         padding: {
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
-        };      
+        }
+
+        ;
+
         .navbar-brand {
             font-size: inherit;
             line-height: 1;
+
             padding: {
                 top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
-            };
+            }
+
+            ;
         }
+
         ul {
             padding-left: 0;
             list-style-type: none;
             margin-bottom: 0;
         }
+
         .navbar-nav {
             margin: {
                 left: auto;
-            };
+            }
+
+            ;
+
             .nav-item {
                 position: relative;
+
                 margin: {
                     left: 14px;
                     right: 14px;
-                };
+                }
+
+                ;
+
                 a {
                     color: var(--blackColor);
+
                     font: {
                         size: var(--fontSize);
                         weight: 700;
-                    };
+                    }
+
+                    ;
+
                     padding: {
                         left: 0;
                         right: 0;
                         top: 25px;
                         bottom: 25px;
-                    };
+                    }
+
+                    ;
+
                     i {
                         font-size: 18px;
                         position: relative;
                         top: 2px;
                         display: inline-block;
+
                         margin: {
                             left: -4px;
                             right: -3px;
-                        };
+                        }
+
+                        ;
                     }
-                    &:hover, &:focus, &.active {
+
+                    &:hover,
+                    &:focus,
+                    &.active {
                         color: var(--mainColor);
                     }
                 }
+
                 &:last-child {
                     margin-right: 0;
                 }
+
                 &:first-child {
                     margin-left: 0;
                 }
-                &:hover, &.active {
+
+                &:hover,
+                &.active {
                     a {
                         color: var(--mainColor);
                     }
                 }
+
                 .dropdown-menu {
                     border: none;
                     top: 70px;
@@ -98,16 +136,20 @@
 
                     li {
                         margin: 0;
-                        
+
                         a {
                             padding: 10px 20px;
                             position: relative;
                             display: block;
                             color: var(--blackColor);
+
                             font: {
                                 size: 16.5px;
                                 weight: 700;
-                            };
+                            }
+
+                            ;
+
                             i {
                                 margin: 0;
                                 position: absolute;
@@ -116,102 +158,125 @@
                                 transform: translateY(-50%);
                                 right: 15px;
                             }
-                            &:hover, &:focus, &.active {
+
+                            &:hover,
+                            &:focus,
+                            &.active {
                                 color: var(--mainColor);
                             }
                         }
+
                         .dropdown-menu {
                             top: 0;
                             opacity: 0;
                             left: -250px;
                             margin-top: 15px;
                             visibility: hidden;
-                            
+
                             li {
                                 a {
                                     color: var(--blackColor);
-                                    
-                                    &:hover, &:focus, &.active {
+
+                                    &:hover,
+                                    &:focus,
+                                    &.active {
                                         color: var(--mainColor);
                                     }
                                 }
+
                                 .dropdown-menu {
                                     top: 0;
                                     opacity: 0;
                                     left: 250px;
                                     visibility: hidden;
-        
+
                                     li {
                                         a {
                                             color: var(--blackColor);
-        
-                                            &:hover, &:focus, &.active {
+
+                                            &:hover,
+                                            &:focus,
+                                            &.active {
                                                 color: var(--mainColor);
                                             }
                                         }
+
                                         .dropdown-menu {
                                             top: 0;
                                             opacity: 0;
                                             left: -250px;
                                             visibility: hidden;
-                
+
                                             li {
                                                 a {
                                                     color: var(--blackColor);
-                
-                                                    &:hover, &:focus, &.active {
+
+                                                    &:hover,
+                                                    &:focus,
+                                                    &.active {
                                                         color: var(--mainColor);
                                                     }
                                                 }
+
                                                 .dropdown-menu {
                                                     top: 0;
                                                     opacity: 0;
                                                     left: 250px;
                                                     visibility: hidden;
-                        
+
                                                     li {
                                                         a {
                                                             color: var(--blackColor);
-                
-                                                            &:hover, &:focus, &.active {
+
+                                                            &:hover,
+                                                            &:focus,
+                                                            &.active {
                                                                 color: var(--mainColor);
                                                             }
                                                         }
+
                                                         .dropdown-menu {
                                                             top: 0;
                                                             opacity: 0;
                                                             left: -250px;
                                                             visibility: hidden;
-                                
+
                                                             li {
                                                                 a {
                                                                     color: var(--blackColor);
-                
-                                                                    &:hover, &:focus, &.active {
+
+                                                                    &:hover,
+                                                                    &:focus,
+                                                                    &.active {
                                                                         color: var(--mainColor);
                                                                     }
                                                                 }
+
                                                                 .dropdown-menu {
                                                                     top: 0;
                                                                     opacity: 0;
                                                                     left: 250px;
                                                                     visibility: hidden;
-                                        
+
                                                                     li {
                                                                         a {
                                                                             color: var(--blackColor);
-                
-                                                                            &:hover, &:focus, &.active {
+
+                                                                            &:hover,
+                                                                            &:focus,
+                                                                            &.active {
                                                                                 color: var(--mainColor);
                                                                             }
                                                                         }
                                                                     }
                                                                 }
+
                                                                 &.active {
                                                                     a {
                                                                         color: var(--mainColor);
                                                                     }
                                                                 }
+
                                                                 &:hover {
                                                                     .dropdown-menu {
                                                                         opacity: 1;
@@ -220,11 +285,13 @@
                                                                 }
                                                             }
                                                         }
+
                                                         &.active {
                                                             a {
                                                                 color: var(--mainColor);
                                                             }
                                                         }
+
                                                         &:hover {
                                                             .dropdown-menu {
                                                                 opacity: 1;
@@ -233,11 +300,13 @@
                                                         }
                                                     }
                                                 }
+
                                                 &.active {
                                                     a {
                                                         color: var(--mainColor);
                                                     }
                                                 }
+
                                                 &:hover {
                                                     .dropdown-menu {
                                                         opacity: 1;
@@ -246,11 +315,13 @@
                                                 }
                                             }
                                         }
+
                                         &.active {
                                             a {
                                                 color: var(--mainColor);
                                             }
                                         }
+
                                         &:hover {
                                             .dropdown-menu {
                                                 opacity: 1;
@@ -259,11 +330,13 @@
                                         }
                                     }
                                 }
+
                                 &.active {
                                     a {
                                         color: var(--mainColor);
                                     }
                                 }
+
                                 &:hover {
                                     .dropdown-menu {
                                         opacity: 1;
@@ -272,11 +345,13 @@
                                 }
                             }
                         }
+
                         &.active {
                             a {
                                 color: var(--mainColor);
                             }
                         }
+
                         &:hover {
                             .dropdown-menu {
                                 opacity: 1;
@@ -286,6 +361,7 @@
                         }
                     }
                 }
+
                 &:hover {
                     .dropdown-menu {
                         opacity: 1;
@@ -293,6 +369,7 @@
                         margin-top: 0;
                     }
                 }
+
                 &.megamenu {
                     position: inherit;
 
@@ -302,6 +379,7 @@
                         align-items: unset;
                         justify-content: unset;
                     }
+
                     .dropdown-menu {
                         width: 100%;
                         top: auto;
@@ -318,14 +396,20 @@
                                     color: var(--blackColor);
                                     padding: 0;
                                     display: block;
+
                                     font: {
                                         size: 16.4px;
                                         weight: 700;
-                                    };
-                                    &:hover, &.active {
+                                    }
+
+                                    ;
+
+                                    &:hover,
+                                    &.active {
                                         color: var(--mainColor);
                                     }
                                 }
+
                                 &:first-child {
                                     a {
                                         margin-top: 0;
@@ -333,13 +417,18 @@
                                 }
                             }
                         }
+
                         .single-category-widget {
                             position: relative;
                             border-top: 1px solid #eeeeee;
                             padding-top: 30px;
+
                             margin: {
                                 top: 30px;
-                            };
+                            }
+
+                            ;
+
                             .icon {
                                 width: 70px;
                                 height: 70px;
@@ -350,12 +439,16 @@
                                 transition: var(--transition);
                                 color: var(--blackColor);
                                 margin-bottom: 15px;
+
                                 border: {
                                     width: 1.5px;
                                     style: dashed;
                                     color: #eeeeee;
                                     radius: 50%;
-                                };
+                                }
+
+                                ;
+
                                 i {
                                     position: absolute;
                                     top: 50%;
@@ -364,22 +457,31 @@
                                     right: 0;
                                 }
                             }
+
                             h3 {
                                 margin-bottom: 0;
+
                                 font: {
                                     size: 20px;
                                     weight: 800;
-                                };
+                                }
+
+                                ;
                             }
+
                             .sub-title {
                                 display: block;
                                 margin-top: 5px;
                                 color: var(--mainColor);
+
                                 font: {
                                     weight: 600;
                                     size: 15px;
-                                };
+                                }
+
+                                ;
                             }
+
                             .link-btn {
                                 position: absolute;
                                 display: block;
@@ -389,6 +491,7 @@
                                 bottom: 0;
                                 z-index: 2;
                             }
+
                             &:hover {
                                 .icon {
                                     background-color: var(--mainColor);
@@ -401,6 +504,7 @@
                 }
             }
         }
+
         .others-option {
             margin-left: 30px;
 
@@ -410,11 +514,12 @@
                 &:first-child {
                     margin-left: 0;
                 }
+
                 .search-box {
                     position: relative;
                     width: 300px;
                     border-radius: 5px;
-        
+
                     .input-search {
                         display: block;
                         width: 100%;
@@ -424,28 +529,37 @@
                         background-color: #f5f5f5;
                         transition: var(--transition);
                         color: var(--blackColor);
+
                         font: {
                             size: 16px;
                             weight: 400;
-                        };
+                        }
+
+                        ;
+
                         padding: {
                             left: 15px;
                             top: 1px;
                             bottom: 0;
                             right: 0;
-                        };
+                        }
+
+                        ;
+
                         &::placeholder {
                             color: #848484;
                             transition: var(--transition);
                         }
+
                         &:focus {
                             border-color: var(--mainColor);
-            
+
                             &::placeholder {
                                 color: transparent;
                             }
                         }
                     }
+
                     button {
                         position: absolute;
                         right: 0;
@@ -459,6 +573,7 @@
                         padding: 0 15px;
                     }
                 }
+
                 .default-btn {
                     margin-bottom: -6px;
                 }
@@ -466,6 +581,7 @@
         }
     }
 }
+
 .navbar-area {
     position: absolute;
     background-color: transparent;
@@ -474,10 +590,14 @@
     width: 100%;
     height: auto;
     z-index: 999;
+
     padding: {
         top: 10px;
         bottom: 10px;
-    };
+    }
+
+    ;
+
     &.is-sticky {
         position: fixed;
         top: 0;
@@ -487,11 +607,15 @@
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
         background-color: var(--whiteColor) !important;
         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+
         padding: {
             top: 5px;
             bottom: 5px;
-        };
+        }
+
+        ;
     }
+
     &.navbar-style-two {
         position: relative;
 
@@ -500,6 +624,7 @@
         }
     }
 }
+
 .others-option-for-responsive {
     display: none;
 
@@ -526,6 +651,7 @@
                 background-color: var(--blackColor);
             }
         }
+
         &:hover {
             .inner {
                 .circle {
@@ -534,6 +660,7 @@
             }
         }
     }
+
     .container {
         position: relative;
 
@@ -548,10 +675,14 @@
             transition: var(--transition);
             transform: scaleX(0);
             z-index: 2;
+
             padding: {
                 left: 15px;
                 right: 15px;
-            };
+            }
+
+            ;
+
             &.active {
                 opacity: 1;
                 visibility: visible;
@@ -559,9 +690,10 @@
             }
         }
     }
+
     .option-inner {
         padding: 15px 15px 8px;
-        box-shadow: 0 15px 40px rgba(0,0,0,.09);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, .09);
         background-color: var(--whiteColor);
 
         .search-box {
@@ -578,28 +710,37 @@
                 background-color: #f5f5f5;
                 transition: var(--transition);
                 color: var(--blackColor);
+
                 font: {
                     size: var(--fontSize);
                     weight: 400;
-                };
+                }
+
+                ;
+
                 padding: {
                     left: 15px;
                     top: 1px;
                     bottom: 0;
                     right: 0;
-                };
+                }
+
+                ;
+
                 &::placeholder {
                     color: #848484;
                     transition: var(--transition);
                 }
+
                 &:focus {
                     border-color: var(--mainColor);
-    
+
                     &::placeholder {
                         color: transparent;
                     }
                 }
             }
+
             button {
                 position: absolute;
                 right: 0;
@@ -612,6 +753,7 @@
                 padding: 0 15px;
             }
         }
+
         .others-option {
             justify-content: center;
             text-align: center;
@@ -623,6 +765,7 @@
                     margin-left: 0;
                 }
             }
+
             .cart-btn {
                 font-size: 22px;
                 position: relative;
@@ -644,11 +787,15 @@
                         border-radius: 50%;
                         color: var(--whiteColor);
                         background-color: var(--mainColor);
+
                         font: {
                             size: 10px;
                             weight: 600;
-                        };
+                        }
+
+                        ;
                     }
+
                     &:hover {
                         color: var(--mainColor);
                     }
@@ -664,12 +811,18 @@
         padding: {
             top: 20px;
             bottom: 20px;
-        };
+        }
+
+        ;
+
         &.is-sticky {
             padding: {
                 top: 10px;
                 bottom: 10px;
-            };
+            }
+
+            ;
+
             .wilo-responsive-nav {
                 .wilo-responsive-menu {
                     &.mean-container {
@@ -679,6 +832,7 @@
                     }
                 }
             }
+
             .others-option-for-responsive {
                 .container {
                     .container {
@@ -687,16 +841,20 @@
                 }
             }
         }
+
         &.navbar-style-two {
             padding: {
                 top: 17px;
                 bottom: 17px;
-            };
+            }
+
+            ;
         }
     }
+
     .wilo-responsive-nav {
         display: block;
-        
+
         .wilo-responsive-menu {
             &.mean-container {
                 position: relative;
@@ -714,31 +872,44 @@
 
                                     .container {
                                         border-top: 1px solid #eeeeee;
+
                                         padding: {
                                             left: 0;
                                             right: 0;
-                                        };
+                                        }
+
+                                        ;
                                     }
+
                                     .row {
                                         display: block;
                                         flex-wrap: unset;
+
                                         margin: {
                                             left: 0;
                                             right: 0;
                                             top: -20px;
-                                        };
+                                        }
+
+                                        ;
+
                                         .col {
                                             flex-basis: unset;
                                             flex-grow: unset;
                                             max-width: 100%;
+
                                             padding: {
                                                 left: 0;
                                                 right: 0;
                                                 top: 20px;
-                                            };
+                                            }
+
+                                            ;
+
                                             &:last-child {
                                                 margin-bottom: 15px;
                                             }
+
                                             &:first-child {
                                                 .megamenu-submenu {
                                                     li {
@@ -747,64 +918,87 @@
                                                 }
                                             }
                                         }
+
                                         &:nth-child(2) {
                                             display: flex;
                                             flex-wrap: wrap;
                                         }
                                     }
+
                                     a {
                                         width: 100%;
                                         float: unset;
                                         display: block;
                                     }
                                 }
+
                                 a {
                                     border-bottom: none !important;
                                 }
+
                                 .mean-expand {
                                     display: none !important;
                                 }
+
                                 .megamenu-submenu {
                                     width: 80%;
                                     overflow: hidden;
                                     display: block !important;
+
                                     padding: {
                                         left: 15px;
                                         right: 15px;
-                                    };
+                                    }
+
+                                    ;
+
                                     margin: {
                                         left: auto;
                                         right: auto;
-                                    };
+                                    }
+
+                                    ;
+
                                     li {
                                         a {
                                             border: none;
                                             margin-top: 18px;
                                             color: #677294;
                                             padding: 0;
+
                                             font: {
                                                 size: 14.5px;
                                                 weight: 400;
-                                            };
-                                            &:hover, &.active {
+                                            }
+
+                                            ;
+
+                                            &:hover,
+                                            &.active {
                                                 color: var(--mainColor);
                                             }
                                         }
+
                                         &:first-child {
                                             border-top: 1px solid #eeeeee;
                                         }
                                     }
                                 }
+
                                 .single-category-widget {
                                     position: relative;
                                     border-top: 0;
                                     margin-top: 0;
+
                                     padding: {
                                         left: 25px;
                                         right: 25px;
                                         top: 15px;
                                         bottom: 15px;
-                                    };
+                                    }
+
+                                    ;
+
                                     .icon {
                                         width: 50px;
                                         height: 50px;
@@ -815,12 +1009,16 @@
                                         transition: var(--transition);
                                         color: var(--blackColor);
                                         margin-bottom: 15px;
+
                                         border: {
                                             width: 1.5px;
                                             style: dashed;
                                             color: #eeeeee;
                                             radius: 50%;
-                                        };
+                                        }
+
+                                        ;
+
                                         i {
                                             position: absolute;
                                             top: 50%;
@@ -829,22 +1027,31 @@
                                             right: 0;
                                         }
                                     }
+
                                     h3 {
                                         margin-bottom: 0;
+
                                         font: {
                                             size: 16px;
                                             weight: 700;
-                                        };
+                                        }
+
+                                        ;
                                     }
+
                                     .sub-title {
                                         display: block;
                                         margin-top: 5px;
                                         color: var(--mainColor);
+
                                         font: {
                                             weight: 600;
                                             size: 13px;
-                                        };
+                                        }
+
+                                        ;
                                     }
+
                                     .link-btn {
                                         position: absolute;
                                         display: block;
@@ -854,6 +1061,7 @@
                                         bottom: 0;
                                         z-index: 2;
                                     }
+
                                     &:hover {
                                         .icon {
                                             background-color: var(--mainColor);
@@ -866,6 +1074,7 @@
                         }
                     }
                 }
+
                 .search-box {
                     display: none !important;
                     position: absolute;
@@ -873,7 +1082,7 @@
                     top: -11px;
                     width: 270px;
                     border-radius: 5px;
-        
+
                     .input-search {
                         display: block;
                         width: 100%;
@@ -883,28 +1092,37 @@
                         background-color: #f5f5f5;
                         transition: var(--transition);
                         color: var(--blackColor);
+
                         font: {
                             size: var(--fontSize);
                             weight: 400;
-                        };
+                        }
+
+                        ;
+
                         padding: {
                             left: 15px;
                             top: 1px;
                             bottom: 0;
                             right: 0;
-                        };
+                        }
+
+                        ;
+
                         &::placeholder {
                             color: #848484;
                             transition: var(--transition);
                         }
+
                         &:focus {
                             border-color: var(--mainColor);
-            
+
                             &::placeholder {
                                 color: transparent;
                             }
                         }
                     }
+
                     button {
                         position: absolute;
                         right: 0;
@@ -917,6 +1135,7 @@
                         padding: 0 15px;
                     }
                 }
+
                 .others-option {
                     position: absolute;
                     right: 55px;
@@ -925,21 +1144,22 @@
 
                     .option-item {
                         margin-left: 30px;
-        
+
                         &:first-child {
                             margin-left: 0;
                         }
                     }
+
                     .cart-btn {
                         font-size: 22px;
                         position: relative;
                         line-height: 1;
-        
+
                         a {
                             display: inline-block;
                             position: relative;
                             color: var(--blackColor);
-        
+
                             span {
                                 position: absolute;
                                 right: -4px;
@@ -951,11 +1171,15 @@
                                 border-radius: 50%;
                                 color: var(--whiteColor);
                                 background-color: var(--mainColor);
+
                                 font: {
                                     size: 10px;
                                     weight: 600;
-                                };
+                                }
+
+                                ;
                             }
+
                             &:hover {
                                 color: var(--mainColor);
                             }
@@ -964,15 +1188,18 @@
                 }
             }
         }
+
         .logo {
             position: relative;
             width: 70%;
             z-index: 999;
         }
     }
+
     .wilo-nav {
         display: none;
     }
+
     .others-option-for-responsive {
         display: block;
     }
@@ -988,11 +1215,15 @@
     .wilo-nav {
         .container-fluid {
             max-width: 1200px;
+
             padding: {
                 left: 20px;
                 right: 20px;
-            };
+            }
+
+            ;
         }
+
         .navbar {
             .navbar-nav {
                 padding-right: 52px;
@@ -1001,28 +1232,28 @@
                     .dropdown-menu {
                         left: auto;
                         right: 0;
-    
+
                         li {
                             .dropdown-menu {
                                 right: auto;
                                 left: -250px;
-                                
+
                                 li {
                                     .dropdown-menu {
                                         left: 250px;
-            
+
                                         li {
                                             .dropdown-menu {
                                                 left: -250px;
-                    
+
                                                 li {
                                                     .dropdown-menu {
                                                         left: 250px;
-                            
+
                                                         li {
                                                             .dropdown-menu {
                                                                 left: -250px;
-                                    
+
                                                                 li {
                                                                     .dropdown-menu {
                                                                         left: 250px;
@@ -1041,11 +1272,13 @@
                     }
                 }
             }
+
             .others-option {
                 display: none !important;
             }
         }
     }
+
     .others-option-for-responsive {
         display: block;
 
@@ -1054,6 +1287,7 @@
                 right: -20px;
             }
         }
+
         .dot-menu {
             padding: 0 10px 0 0;
             right: -10px;
@@ -1064,25 +1298,27 @@
 }
 
 // custom mega menu//
-.megamenu
-{
+.megamenu {
     display: flex !important;
     flex-wrap: wrap !important;
-    width: 600px  !important;
-    left: -250px  !important;
+    width: 600px !important;
+    left: -250px !important;
 }
-.megamenu li
-{
+
+.megamenu li {
     flex: 0 0 50% !important;
 }
-@media(max-width:1199px)
-{
-    .megamenu li
-    {
+
+@media(max-width:1199px) {
+    .megamenu li {
         flex: 0 0 100% !important;
     }
-    .megamenu
-    {
+
+    .megamenu {
         width: 100% !important;
+    }
+
+    .dot-menu {
+        display: none;
     }
 }

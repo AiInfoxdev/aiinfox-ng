@@ -9,7 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
   <script>
-tabControl();
+// tabControl();
 
 /*
 We also apply the switch when a viewport change is detected on the fly
@@ -19,12 +19,12 @@ it only once when the resizing ends. It's not perfect, but it's better
 than have it running constantly during the action of resizing.
 */
 var resizeTimer;
-$(window).on('resize', function(e) {
-  clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function() {
-    tabControl();
-  }, 250);
-});
+// $(window).on('resize', function(e) {
+//   clearTimeout(resizeTimer);
+//   resizeTimer = setTimeout(function() {
+//     tabControl();
+//   }, 250);
+// });
 
 /*
 The function below is responsible for switching the tabs when clicked.

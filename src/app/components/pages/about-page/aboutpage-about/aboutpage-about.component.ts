@@ -21,7 +21,8 @@ export class AboutpageAboutComponent implements OnInit {
 
     aboutImage: Image[] = [
         {
-            img: 'assets/img/about/img1.png'
+            img: 'assets/img/about/img1.png',
+            alt:'Generative AI Company'
         }
     ]
     aboutContent: Content[] = [
@@ -87,6 +88,7 @@ export class AboutpageAboutComponent implements OnInit {
 }
 class Image {
     img : string;
+    alt:string
 }
 class Content {
     subTitle : string;

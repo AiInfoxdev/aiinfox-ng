@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     
@@ -18,10 +18,10 @@
             </div>
         </div>
     
-        <div class="{{circleShape1Class}}"><img src="assets/img/shape/circle-shape1.png" alt="image"></div>
-        <div class="{{vectorShape3Class}}"><img src="assets/img/shape/vector-shape3.png" alt="image"></div>
-        <div class="{{vectorShape9Class}}"><img src="assets/img/shape/vector-shape9.png" alt="image"></div>
-        <div class="{{vectorShape10Class}}"><img src="assets/img/shape/vector-shape10.png" alt="image"></div>
+        <div class="{{circleShape1Class}}"><img src="assets/img/shape/circle-shape1.png" alt="AI Values"></div>
+        <div class="{{vectorShape3Class}}"><img src="assets/img/shape/vector-shape3.png" alt="AI Values"></div>
+        <div class="{{vectorShape9Class}}"><img src="assets/img/shape/vector-shape9.png" alt="AI Values"></div>
+        <div class="{{vectorShape10Class}}"><img src="assets/img/shape/vector-shape10.png" alt="AI Values"></div>
     </section>
 </ng-container>
 <ng-container *ngIf="section === 'coreValues'">
@@ -30,7 +30,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     
@@ -56,7 +56,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     
@@ -82,7 +82,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     
@@ -108,7 +108,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     
@@ -134,7 +134,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-speed="0.06" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     
@@ -169,7 +169,7 @@
                 </div>
                 <div class="col-lg-4 col-md-12">
                     <div class="project-start-image" *ngFor="let Image of projectStartImage;">
-                        <img [src]="Image.img" data-revert="true" alt="image">
+                        <img [src]="Image.img" data-revert="true" alt={{Image.alt}}>
                     </div>
                 </div>
     

@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { afterRender, Component, OnInit } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
+import { GlobalService } from './_services/global.service';
+import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
 declare let $: any;
 
 @Component({
@@ -22,11 +24,30 @@ export class AppComponent implements OnInit {
     isLandingPage: boolean = false;
 
     constructor(
-        private router: Router
-    ) {}
+        private router: Router,
+        private globalService: GlobalService
+    ) {
+        // afterRender(()=>{
+        //     // runs on client / browser
+        //     console.log("Constructor: Output is generated in both the server and the browser.");
+        // })
+        this.getBlogDetails();
+    }
 
     ngOnInit(){
         this.recallJsFuntions();
+    }
+
+    getBlogDetails() {
+        this.globalService.getBlogData().subscribe((data: any) => {
+            if(data) {
+                data.forEach((element: any) => {
+                    const route = { path: element.path, component: element.component, data: element }
+                    this.router.config.splice(this.router.config.length - 1, 0, route);
+                });
+                this.router.resetConfig(this.router.config);
+            }
+        });
     }
 
     recallJsFuntions() {

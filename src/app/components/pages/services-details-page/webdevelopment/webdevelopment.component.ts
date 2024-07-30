@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-webdevelopment',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './webdevelopment.component.scss'
 })
 export class WebdevelopmentComponent {
-
+  constructor(private global: GlobalService ) { }
 }

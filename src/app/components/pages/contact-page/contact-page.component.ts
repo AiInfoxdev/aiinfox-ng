@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { EmailService } from 'src/app/_services/email.service';
 
 @Component({
     selector: 'app-contact-page',
@@ -6,10 +8,35 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./contact-page.component.scss']
 })
 export class ContactPageComponent implements OnInit {
+    contactForm: any;
+    constructor(private emailService: EmailService) { }
 
-    constructor() { }
+    ngOnInit() {
+        this.initContactForm();
+    }
 
-    ngOnInit(): void {
+    initContactForm() {
+        this.contactForm = new FormGroup({
+            name: new FormControl(''),
+            email : new FormControl(''), 
+            phoneNumber : new FormControl(''),
+            message : new FormControl('')
+        })
+
+    }
+
+    onSend(){
+        this.emailService.sendEmail(this.contactForm.value).then(
+            (response) => {
+              console.log('Email sent successfully', response.text);
+              this.contactForm.reset();
+            //   alert('Email sent successfully');
+            },
+            (error) => {
+              console.log('Failed to send email', error);
+            //   alert('Failed to send email');
+            }
+          );
     }
 
     pageTitleArea: pageTitle[] = [
@@ -24,7 +51,7 @@ export class ContactPageComponent implements OnInit {
             location: '5206, Craftsman ST, Johns Creek Georgia, 30097'
         }
     ]
-    
+
     contactInfoBox4: InfoBox4[] = [
         {
             icon: 'bx bx-map',
@@ -44,7 +71,7 @@ export class ContactPageComponent implements OnInit {
         {
             icon: 'bx bx-phone-call',
             title: 'Contact',
-            number: '+91-9988339877',
+            number: '+91-7888513249',
             email: 'info@aiinfox.com'
         }
     ]
@@ -66,24 +93,25 @@ export class ContactPageComponent implements OnInit {
     ]
     contactImage: Image[] = [
         {
-            img: 'assets/img/contact.png'
+            img: 'assets/img/contact.png',
+            alt: 'Contact Us'
         }
     ]
 
 }
 class pageTitle {
-    title : string;
+    title: string;
 }
 class InfoBox1 {
-    icon : string;
-    title : string;
-    location : string;
+    icon: string;
+    title: string;
+    location: string;
 }
 class InfoBox2 {
-    icon : string;
-    title : string;
-    number : string;
-    email : string;
+    icon: string;
+    title: string;
+    number: string;
+    email: string;
 }
 // class InfoBox3 {
 //     icon : string;
@@ -92,20 +120,21 @@ class InfoBox2 {
 //     text2 : string;
 // }
 class InfoBox4 {
-    icon : string;
-    title : string;
-    location : string;
+    icon: string;
+    title: string;
+    location: string;
 }
 class InfoBox5 {
-    icon : string;
-    title : string;
-    location : string;
+    icon: string;
+    title: string;
+    location: string;
 }
 class sectionTitleContent {
-    subTitle : string;
-    title : string;
-    paragraphText : string;
+    subTitle: string;
+    title: string;
+    paragraphText: string;
 }
 class Image {
-    img : string;
+    img: string;
+    alt: string;
 }

@@ -1037,13 +1037,13 @@ Shape Img CSS
                         position: center center !important;
                     };
                     &.bg1 {
-                        background-image: url(assets/img/blog/img9.jpg);
+                        background-image: url(assets/img/blog/aiblog.jpg);
                     }
                     &.bg2 {
-                        background-image: url(assets/img/blog/img8.jpg);
+                        background-image: url(assets/img/blog/designus.jpg);
                     }
                     &.bg3 {
-                        background-image: url(assets/img/blog/img7.jpg);
+                        background-image: url(assets/img/blog/mobileapp.jpg);
                     }
                 }
                 &::before, &::after {
@@ -1089,7 +1089,7 @@ Shape Img CSS
                     line-height: 1.4;
                     font: {
                         size: 17px;
-                        weight: 800;
+                        weight: 400;
                     };
                     a {
                         display: inline-block;
@@ -1120,7 +1120,7 @@ Shape Img CSS
                 color: var(--blackColor);
                 padding-left: 18px;
                 font: {
-                    weight: 700;
+                    weight: 400;
                     size: 15px;
                 };
                 &:last-child {
@@ -1167,7 +1167,7 @@ Shape Img CSS
             border: none;
             border-radius: 3px;
             font: {
-                weight: 700;
+                weight: 400;
                 size: 14px !important;
             };
             margin: {
