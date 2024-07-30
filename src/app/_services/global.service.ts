@@ -49,9 +49,11 @@ export class GlobalService {
             postImg: 'assets/img/blog/aiblog.jpg',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'blog-details',
-            postDate: 'April 30, 2024',
+            postDate: 'July 24, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan',
+            alt:'AI Development Company',
+            postAuthorName: 'Karan',
+            authorAlt:'Karan',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             component: DiscoverhowtopaiComponent
         },
@@ -59,9 +61,11 @@ export class GlobalService {
             postImg: 'assets/img/blog/designus.jpg',
             postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
             postLink: 'blog-details',
-            postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Sarah Taylor',
+            postDate: 'July 10 2024',
+            postAuthorImage: 'assets/img/user2.jpg',
+            alt:'Web Design Company',
+            authorAlt:'Rushali',
+            postAuthorName: 'Rushali',
             path: 'elevate-your-brand-with-a-top-notch-web-design-company',
             component: ConversionrateComponent
         },
@@ -69,72 +73,14 @@ export class GlobalService {
             postImg: 'assets/img/blog/mobileapp.jpg',
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'blog-details',
-            postDate: 'April 27, 2024',
+            postDate: 'June 28, 2024',
+            alt:'App Development Company',
             postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'David Warner',
+            postAuthorName: 'Manjeet',
+            authorAlt:'Manjeet',
             path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             component: BusinessdataComponent 
         },
-        {
-            postImg: 'assets/img/blog/img7.jpg',
-            postTitle: 'The data-driven approach to understanding',
-            postLink: 'blog-details',
-            postDate: 'April 30, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries4',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img8.jpg',
-            postTitle: 'Finding the blocks of neighboring fields',
-            postLink: 'blog-details',
-            postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Sarah Taylor',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries5',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img9.jpg',
-            postTitle: 'Data into Your Enterprise to Drive Insights',
-            postLink: 'blog-details',
-            postDate: 'April 27, 2024',
-            postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'David Warner',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries6',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img10.jpg',
-            postTitle: 'Introduction to Recommendation Engines',
-            postLink: 'blog-details',
-            postDate: 'April 30, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Alex Morgan',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries7',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img11.jpg',
-            postTitle: '5 Things You Should Know About Data',
-            postLink: 'blog-details',
-            postDate: 'April 28, 2024',
-            postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Sarah Taylor',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries8',
-            component: BlogDetailsPageComponent
-        },
-        {
-            postImg: 'assets/img/blog/img12.jpg',
-            postTitle: 'Which Language to Choose for Deep Learning?',
-            postLink: 'blog-details',
-            postDate: 'April 27, 2024',
-            postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'David Warner',
-            path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries9',
-            component: BlogDetailsPageComponent
-        }
     ];
 
     get currentPageMETA(): any {
@@ -217,7 +163,7 @@ export class GlobalService {
                     description: 'Services Description',
                     keywords: 'Services Keywords'
                 };
-            case '/contact':
+            case '/contact-us':
                 return {
                     title: 'Contact Us for Custom AI Solutions',
                     description: 'Explore the ideal AI solutions to encourage innovative ideas. To discuss your project requirements with India top AI specialists, get in touch with us.',

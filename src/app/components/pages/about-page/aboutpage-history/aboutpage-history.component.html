@@ -1,9 +1,9 @@
 <section class="history-area ptb-100 bg-fafafb">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{sectionTitleContent.subTitle}}</span>
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Our History"> {{sectionTitleContent.subTitle}}</span>
             <h2>{{sectionTitleContent.title}}</h2>
-            <p>{{sectionTitleContent.paragraphText}}</p>
+            <p [innerHtml]="sectionTitleContent.paragraphText"></p>
         </div>
 
         <ol class="timeline history-timeline">
@@ -29,7 +29,7 @@
 
                         <div class="col-lg-5 col-md-12">
                             <div class="image">
-                                <img [src]="TimelineBlock.img" alt="image">
+                                <img [src]="TimelineBlock.img" alt={{TimelineBlock.alt}}>
                             </div>
                         </div>
                     </div>

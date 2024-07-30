@@ -9,13 +9,13 @@
                             <h2>{{singleCaseStudyItemContent.title}}</h2>
                             <p>{{singleCaseStudyItemContent.paragraphText1}}</p>
                             <p>{{singleCaseStudyItemContent.paragraphText2}}</p>
-                            <a routerLink="/{{singleCaseStudyItemContent.link}}" class="default-btn"><i class="{{singleCaseStudyItemContent.linkIcon}}"></i>{{singleCaseStudyItemContent.linkText}}<span></span></a>
+                            <a routerLink="/{{singleCaseStudyItemContent.link}}" [queryParams]="{section: singleCaseStudyItemContent.id}" class="default-btn"><i class="{{singleCaseStudyItemContent.linkIcon}}"></i>{{singleCaseStudyItemContent.linkText}}<span></span></a>
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
                         <div class="case-study-image">
-                            <a routerLink="/{{singleCaseStudyItemContent.link}}" class="d-block"><img [src]="singleCaseStudyItemContent.img" alt="image"></a>
+                            <a routerLink="/{{singleCaseStudyItemContent.link}}" class="d-block"><img [src]="singleCaseStudyItemContent.img" alt={{singleCaseStudyItemContent.alt}}></a>
                         </div>
                     </div>
                 </div>

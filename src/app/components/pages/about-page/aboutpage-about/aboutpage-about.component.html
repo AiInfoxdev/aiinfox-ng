@@ -3,14 +3,14 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-image" *ngFor="let Image of aboutImage;">
-                    <img [src]="Image.img" alt="image">
+                    <img [src]="Image.img" alt={{Image.alt}}>
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
                     <div class="content" *ngFor="let Content of aboutContent;">
-                        <span class="sub-title"><img src="assets/img/star-icon.png" alt="image"> {{Content.subTitle}}</span>
+                        <span class="sub-title"><img src="assets/img/star-icon.png" alt="About Our Company"> {{Content.subTitle}}</span>
                         <h2>{{Content.title}}</h2>
                         <p>{{Content.paragraphText1}}</p>
                         <!-- <ul class="features-list">

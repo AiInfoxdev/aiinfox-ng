@@ -1,7 +1,7 @@
 <section class="testimonials-area bg-f1f8fb pt-100">
     <div class="container">
         <div class="section-title" *ngFor="let sectionTitleContent of sectionTitle;">
-            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Our Testimonial"> {{sectionTitleContent.subTitle}}</span>
+            <span class="sub-title"><img src="assets/img/star-icon.png" alt="Testimonials"> {{sectionTitleContent.subTitle}}</span>
             <h2>{{sectionTitleContent.title}}</h2>
             <p>{{sectionTitleContent.paragraphText}}</p>
         </div>
@@ -11,10 +11,10 @@
                 <p>{{TestimonialsItemContent.paragraphText}}</p>
                 <div class="client-info">
                     <div class="d-flex justify-content-center align-items-center">
-                        <img [src]="TestimonialsItemContent.clientImg" alt="image">
+                        <img [src]="TestimonialsItemContent.clientImg" alt={{TestimonialsItemContent.alt}}>
                         <div class="title">
                             <h3>{{TestimonialsItemContent.clientName}}</h3>
-                            <span>{{TestimonialsItemContent.clientDesignation}}</span>
+                            <!-- <span>{{TestimonialsItemContent.clientDesignation}}</span> -->
                         </div>
                     </div>
                 </div>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="testimonials-view-btn text-center" *ngFor="let Btn of testimonialsBtn;">
-            <a routerLink="/{{Btn.link}}" class="default-btn"><i class="{{Btn.icon}}"></i>{{Btn.text}}<span></span></a>
+            <a [href]= "Btn.link" target="_blank" class="default-btn"><i class="{{Btn.icon}}"></i>{{Btn.text}}<span></span></a>
         </div>
     </div>
 

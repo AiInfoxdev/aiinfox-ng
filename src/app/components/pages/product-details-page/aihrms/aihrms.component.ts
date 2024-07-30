@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
@@ -9,5 +10,10 @@ import { GlobalService } from 'src/app/_services/global.service';
   styleUrl: './aihrms.component.scss'
 })
 export class AihrmsComponent {
-  constructor(private global: GlobalService ) { }
+  constructor(private global: GlobalService,private route:Router ) { }
+
+  onClickBook(){
+    this.route.navigate(['/contact-us'])
+
+  }
 }

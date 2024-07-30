@@ -59,7 +59,8 @@ export class ProjectStartComponent implements OnInit {
 
     projectStartImage: Image[] = [
         {
-            img: 'assets/img/project-start1.png'
+            img: 'assets/img/project-start1.png',
+            alt:'AI Services'
         }
     ]
     projectStartContent: Content[] = [
@@ -68,7 +69,7 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'Drop us a line to discuss how Aiinfox developers can set your product up for success with a human-centered design.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     ]
 
@@ -78,7 +79,7 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'For a business to be successful, the foundation needs to be strong and firm. For a strong foundation, the foremost important cornerstone is business ethics. We at AiInfox, stay true to our work and religiously follow a well-defined policy that shows complete transparency between us and our prestigious client leaving any room for dishonesty. This makes us the most trusted partner!',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     
     ]
@@ -89,7 +90,7 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'AiInfox offers consulting services that offer powerful and innovative AI solutions with our high-end software developed by our skilled team.We are here to provide solutions to every need of yours.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     
     ]
@@ -100,17 +101,17 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'Let us venture into the realm of digital success together.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     
     ]
     webdesignContent: Content[] = [
         {
-            title: 'Start Today Only ',
+            title: 'Lets Start With AiInfox ',
             paragraphText: 'We, professional web designers, strive hard to make AiInfox, the best website design services company in India and prove our mettle in the field of Artificial intelligence.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     
     ]
@@ -120,7 +121,7 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'We have become one of the best mobile app development agency India and are best known for providing exceptional services and support at the same time.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     
     ]
@@ -131,13 +132,14 @@ export class ProjectStartComponent implements OnInit {
             paragraphText: 'Begin your no-commitment, 1-week trial today.',
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'CONSULT FOR FREE-TRIAL',
-            defaultBtnLink: 'contact'
+            defaultBtnLink: 'contact-us'
         }
     
     ]
 }
 class Image {
     img : string;
+    alt:string;
 }
 class Content {
     title : string;

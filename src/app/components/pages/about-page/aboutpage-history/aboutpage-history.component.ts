@@ -15,38 +15,42 @@ export class AboutpageHistoryComponent implements OnInit {
     sectionTitle: sectionTitleContent[] = [
         {
             subTitle: "Our History",
-            title: 'History Begins in 2021',
-            paragraphText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+            title: 'History Begins in 2022',
+            paragraphText: `AiInfox is dedicated to transforming organizations through cutting-edge technology, and it has grown rapidly to become a major provider of <a href=""><b>AI and Machine Learning Services<b></a>.`
         }
     ]
     historyTimeline: TimelineBlock[] = [
         {
-            year: '2021',
+            year: '2022',
             date: 'October 20',
             title: 'Founded',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'assets/img/history/img1.jpg'
+            paragraphText: 'Our Company was founded in 2022. We established the framework for what would soon become an upward trend in the business, motivated by a desire for innovation and quality.',
+            img: 'assets/img/history/img1.jpg',
+            alt:'Establish'
         },
         {
-            year: '2022',
+            year: '2023',
             date: 'January 14',
-            title: 'Global Success',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'assets/img/history/img2.jpg'
+            title: 'Local Projects',
+            paragraphText: 'As we entered 2023, we focused on local projects. We focused on dedicating ourselves to understanding and meeting our communities specific needs. This period was critical in polishing our talents and establishing a strong reputation for delivering quality and dependability.',
+            img: 'assets/img/history/img2.jpg',
+            alt:'Local Projects'
         },
         {
             year: '2023',
             date: 'March 25',
-            title: 'Founded Data Center',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'assets/img/history/img3.jpg'
+            title: 'Significant Growth',
+            paragraphText: 'By the end of 2023, our dedication to quality and expanding portfolio of successful projects had resulted in enormous growth. We grew our team, improved our capabilities, and prepared to face new challenges and opportunities.',
+            img: 'assets/img/history/img3.jpg',
+            alt:'Significant Growth'
         },
         {
             year: '2024',
             date: 'December 10',
-            title: 'International Award',
-            paragraphText: 'Real innovations and a positive customer experience are the heart of successful communication. Lorem ipsum dolor sit amet, sectetur adipiscing elit, tempor incididunt ut labore et dolore magna.',
-            img: 'assets/img/history/img4.jpg'
+            title: 'Global Expansion and AI Integration',
+            paragraphText: 'In 2024, our company went global, delivering our services to a wider community. We also embraced AI, integrating new and efficient solutions into our efforts. This represented the start of a new chapter, showing our aspirations for global leadership and innovation.',
+            img: 'assets/img/history/img4.jpg',
+            alt:'Global Expansion and AI Integration'
         }
     ]
 
@@ -62,4 +66,5 @@ class TimelineBlock {
     title : string;
     paragraphText : string;
     img : string;
+    alt:string;
 }

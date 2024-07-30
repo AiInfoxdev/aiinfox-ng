@@ -21,7 +21,8 @@ export class AboutpageAboutComponent implements OnInit {
 
     aboutImage: Image[] = [
         {
-            img: 'assets/img/about/img1.png'
+            img: 'assets/img/about/img1.png',
+            alt:'Generative AI Company'
         }
     ]
     aboutContent: Content[] = [
@@ -29,7 +30,7 @@ export class AboutpageAboutComponent implements OnInit {
             subTitle: 'About Us',
             title: 'Drive Digital Revolution Through Best Generative AI Company',
             paragraphText1: 'AiInfox is a dedicated team of AI developers, coders, designers, and digital marketers who are rigorously working to leave a mark in the field of Artificial Intelligence.',
-            paragraphText2: 'With the rise of AI in the market, we focused exceptionally on providing artificial intelligence and machine learning, web development, generative ai services, data science services, web design services, mobile app development and digital marketing services. As a top AI company in Mohali, We came into existence in August 2023. Since then, we have been on the path of providing exceptional services to our clients with maximum satisfaction.'
+            paragraphText2: 'With the rise of AI in the market, we focused exceptionally on providing artificial intelligence and machine learning, web development, generative ai services, data science services, web design services, mobile app development and digital marketing services. We came into existence in August 2023. Since then, we have been on the path of providing exceptional services to our clients with maximum satisfaction.'
         }
     ]
     featuresList: List[] = [
@@ -87,6 +88,7 @@ export class AboutpageAboutComponent implements OnInit {
 }
 class Image {
     img : string;
+    alt:string
 }
 class Content {
     subTitle : string;

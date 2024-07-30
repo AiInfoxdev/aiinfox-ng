@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
     selector: 'app-homeone-blog',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./homeone-blog.component.scss']
 })
 export class HomeoneBlogComponent implements OnInit {
+    blogData: any;
 
-    constructor() { }
+    constructor(private globalService: GlobalService, private router: Router ) { }
 
     ngOnInit(): void {
+        this.getBlogDetails()
+    }
+
+    getBlogDetails() {
+        this.globalService.getBlogData().subscribe((data: any) => {
+            if(data) {
+                this.blogData = data;
+                this.blogData.forEach((element: any) => {
+                    const route = { path: element.path, component: element.component, data: element }
+                    this.router.config.splice(this.router.config.length - 1, 0, route);
+                });
+                this.router.resetConfig(this.router.config);
+            }
+        });
     }
 
     sectionTitle: sectionTitleContent[] = [
@@ -24,7 +41,7 @@ export class HomeoneBlogComponent implements OnInit {
             postImg: 'assets/img/blog/img1.jpg',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
-            postDate: 'April 30, 2024',
+            postDate: 'June 28, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'Manjeet',
             alt: 'AI Development Companies in Mohali'
@@ -33,18 +50,18 @@ export class HomeoneBlogComponent implements OnInit {
             postImg: 'assets/img/blog/img2.jpg',
             postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
             postLink: 'elevate-your-brand-with-a-top-notch-web-design-company',
-            postDate: 'April 28, 2024',
+            postDate: 'July 10, 2024',
             postAuthorImage: 'assets/img/user2.jpg',
-            postAuthorName: 'Manjeet',
+            postAuthorName: 'Rushali',
             alt: 'Web Design Company in Mohali'
         },
         {
             postImg: 'assets/img/blog/img3.jpg',
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
-            postDate: 'April 27, 2024',
+            postDate: 'July 24, 2024',
             postAuthorImage: 'assets/img/user3.jpg',
-            postAuthorName: 'Manjeet',
+            postAuthorName: 'Karan',
             alt: 'Mobile App Development Company in Mohali'
         }
     ]

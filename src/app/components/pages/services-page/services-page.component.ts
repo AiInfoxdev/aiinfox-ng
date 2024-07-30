@@ -39,35 +39,35 @@ export class ServicesPageComponent implements OnInit {
             icon: 'flaticon-money',
             title: 'Data Science',
             paragraphText: 'AiInfox is known for specialising in data science. We are known to provide the best data science services which is a great combination of business analytics, machine learning...',
-            link: 'services-details',
+            link: 'data-science',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-segmentation',
             title: 'Mobile App Development',
             paragraphText: 'Our highly accomplished developers are known to have experience and knowledge of the latest technologies as a result they make sure your app is built as per industry standards...',
-            link: 'services-details',
+            link: 'mobile-app-development',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-analytics',
             title: 'Web Development',
-            paragraphText: 'n today’s digitalized age, owning a website has become essential. It acts as a doorway to reach both local and global audiences offering widespread opportunities to promote...',
-            link: 'services-details',
+            paragraphText: 'In today’s digitalized age, owning a website has become essential. It acts as a doorway to reach both local and global audiences offering widespread opportunities to promote...',
+            link: 'web-development',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-settings',
             title: 'Web Design',
             paragraphText: 'We professional web designers at AiInfox are passionate about creating designs that speak your mind and make your thoughts turn into reality Every business is different and has different requirements...',
-            link: 'services-details',
+            link: 'web-design',
             linkText: 'View Details'
         },
         {
             icon: 'flaticon-settings',
             title: 'Digital Marketing and SEO',
             paragraphText: 'With our expert SEO services, you can elevate your online visibility. We have a team of thorough professionals who are experts in employing industry-best practices...',
-            link: 'services-details',
+            link: 'digital-marketing-seo',
             linkText: 'View Details'
         }
     ]

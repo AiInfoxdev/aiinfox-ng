@@ -13,8 +13,7 @@ export class ServicesDetailsPageComponent implements OnInit {
         private route: ActivatedRoute
     ) { }
 
-    ngOnInit(): void {
-        console.log(this.router.url)
+    ngOnInit() {
     }
 
     pageTitleArea: pageTitle[] = [
