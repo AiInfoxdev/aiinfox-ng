@@ -115,7 +115,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="project-start-content" *ngFor="let Content of webdesignContent;">
                         <h2>{{Content.title}}</h2>
-                        <p>{{Content.paragraphText}}</p>
+                        <p [innerHtml]="Content.paragraphText"></p>
                         <a routerLink="/{{Content.defaultBtnLink}}" class="default-btn"><i class="{{Content.defaultBtnIcon}}"></i>{{Content.defaultBtnText}}<span></span></a>
                     </div>
                 </div>

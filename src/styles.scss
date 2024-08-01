@@ -2019,3 +2019,14 @@ Shape Img CSS
     }
 
 }
+
+.project-start-area {
+    a {
+        color: var(--whiteColor);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--mainColor); 
+        }
+    }
+}

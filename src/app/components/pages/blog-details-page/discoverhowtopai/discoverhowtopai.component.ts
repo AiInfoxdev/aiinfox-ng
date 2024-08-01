@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { EmailService } from 'src/app/_services/email.service';
+import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 
 @Component({
   selector: 'app-discoverhowtopai',
@@ -9,8 +11,11 @@ import { EmailService } from 'src/app/_services/email.service';
 })
 export class DiscoverhowtopaiComponent implements OnInit {
   commentForm: any;
-  constructor(private emailService: EmailService) { }
+  constructor(private emailService: EmailService, private metaService: Meta,
+    private titleService: Title) { }
   ngOnInit() {
+    this.metaService.addTag({ property: 'og:title', content: 'Blog'});
+    this.titleService.setTitle("Top AI Development Companies in Mohali Revolutionizing Sector");
     this.initCommentForm();
   }
 

@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { EmailService } from 'src/app/_services/email.service';
-
+import { Meta } from '@angular/platform-browser';
+import { Title } from "@angular/platform-browser";
 @Component({
   selector: 'app-businessdata',
   templateUrl: './businessdata.component.html',
@@ -9,8 +10,11 @@ import { EmailService } from 'src/app/_services/email.service';
 })
 export class BusinessdataComponent {
   commentForm: any;
-  constructor(private emailService: EmailService) { }
+  constructor(private emailService: EmailService,private metaService: Meta,
+    private titleService: Title) { }
   ngOnInit() {
+    this.metaService.addTag({ property: 'og:title', content: 'Blog'});
+    this.titleService.setTitle("Choose the Best App Development Company in Mohali");
     this.initCommentForm();
   }
 

@@ -103,12 +103,12 @@ export class ProjectStartComponent implements OnInit {
             defaultBtnText: 'Get Started',
             defaultBtnLink: 'contact-us'
         }
-    
+
     ]
     webdesignContent: Content[] = [
         {
             title: 'Lets Start With AiInfox ',
-            paragraphText: 'We, professional web designers, strive hard to make AiInfox, the best website design services company in India and prove our mettle in the field of Artificial intelligence.',
+            paragraphText: `We, professional web designers, strive hard to make AiInfox a leader in <a href='' style="color:white"> web design services in Mohali </a> and prove our mettle in the field of artificial intelligence.`,
             defaultBtnIcon: 'flaticon-web',
             defaultBtnText: 'Get Started',
             defaultBtnLink: 'contact-us'

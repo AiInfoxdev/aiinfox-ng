@@ -44,7 +44,7 @@ export class HomeoneTestimonialsComponent implements OnInit {
     ]
     testimonialsBtn: Btn[] = [
         {
-            link: "https://g.page/r/CVeBHfHCmY4nEAE/review",
+            link: "https://www.google.com/maps/place/AiInfox/@30.7091302,76.6857827,17z/data=!4m8!3m7!1s0x390fef0b0308c373:0x278e99c2f11d8157!8m2!3d30.7091256!4d76.6883576!9m1!1b1!16s%2Fg%2F11ld3c6v20?entry=ttu",
             icon: 'flaticon-view',
             text: 'Check Out All Reviews'
         }

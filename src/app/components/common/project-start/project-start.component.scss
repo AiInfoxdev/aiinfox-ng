@@ -4,12 +4,18 @@
 
     &.bg-color {
         background-color: var(--blackColor);
+        a {
+            color: var(--whiteColor) !important;
+        }
 
         .project-start-content {
             h2, h3 {
                 color: var(--whiteColor);
             }
             p {
+                color: var(--whiteColor);
+            }
+            a {
                 color: var(--whiteColor);
             }
             .default-btn {
@@ -26,6 +32,7 @@
 .project-start-image {
     text-align: center;
 }
+
 .project-start-content {
     .sub-title {
         position: relative;
