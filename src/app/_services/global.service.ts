@@ -20,8 +20,8 @@ export class GlobalService {
         private metaService: Meta,
         private titleService: Title
     ) {
-        this,router.events.subscribe((val) => {
-            if(val instanceof NavigationEnd) {
+        this, router.events.subscribe((val) => {
+            if (val instanceof NavigationEnd) {
                 this.metaService.removeTag('name="keywords"');
                 this.metaService.removeTag('name="description"');
                 this.metaService.addTags([
@@ -51,9 +51,9 @@ export class GlobalService {
             postLink: 'blog-details',
             postDate: 'July 24, 2024',
             postAuthorImage: 'assets/img/user1.jpg',
-            alt:'AI Development Company',
+            alt: 'AI Development Company',
             postAuthorName: 'Karan',
-            authorAlt:'Karan',
+            authorAlt: 'Karan',
             path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             component: DiscoverhowtopaiComponent
         },
@@ -63,8 +63,8 @@ export class GlobalService {
             postLink: 'blog-details',
             postDate: 'July 10 2024',
             postAuthorImage: 'assets/img/user2.jpg',
-            alt:'Web Design Company',
-            authorAlt:'Rushali',
+            alt: 'Web Design Company',
+            authorAlt: 'Rushali',
             postAuthorName: 'Rushali',
             path: 'elevate-your-brand-with-a-top-notch-web-design-company',
             component: ConversionrateComponent
@@ -74,12 +74,12 @@ export class GlobalService {
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'blog-details',
             postDate: 'June 28, 2024',
-            alt:'App Development Company',
+            alt: 'App Development Company',
             postAuthorImage: 'assets/img/user1.jpg',
             postAuthorName: 'Manjeet',
-            authorAlt:'Manjeet',
+            authorAlt: 'Manjeet',
             path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
-            component: BusinessdataComponent 
+            component: BusinessdataComponent
         },
     ];
 
@@ -100,13 +100,13 @@ export class GlobalService {
             case '/data-science':
                 return {
                     title: 'Top Data Science Companies in Mohali | AiInfox Analytics',
-                    description: 'Explore AiInfox for company data analysis. Leading among data science companies in Mohali, we develop the value of your data.',
+                    description: 'Explore AiInfox for company data analysis. Leading among data science companies in Mohali, we develop the value of your data.',
                     keywords: 'Data science companies in Mohali'
                 };
             case '/generative-ai':
                 return {
                     title: 'Powered Your Innovation Journey with AWS Generative AI Services',
-                    description: 'Discover how AiInfox&#39;s AWS-based generative AI services may help your business reach new heights. Explore cutting-edge commercial applications now.',
+                    description: 'Discover how our AWS-based generative AI services may help your business reach new heights. Explore cutting-edge commercial applications now.',
                     keywords: 'Data science companies in Mohali'
                 };
             case '/mobile-app-development':
@@ -124,7 +124,7 @@ export class GlobalService {
             case '/web-design':
                 return {
                     title: 'Craft Your Vision: Customized Web Design Services.',
-                    description: 'Enhance your brand with AiInfox&#39;s best web design services in Mohali. Our experts provide planning and creative designs to ensure your online success.',
+                    description: 'Enhance your brand with AiInfox providing the best web design services in Mohali. Our experts provide planning and creative designs to ensure your online success.',
                     keywords: 'Best web design services in Mohali, Best Web design company in Mohali'
                 };
             case '/digital-marketing-seo':
@@ -146,11 +146,11 @@ export class GlobalService {
                     keywords: 'AI HMS, Best Hospital Management System, HMS Software'
                 };
             case '/ai-chatbot':
-                    return {
-                        title: 'Enhance customer interaction with AiInfox AI Chatbot Software.',
-                        description: 'Discover AiInfox powerful AI chatbot software, which provides seamless customer engagement and an improved user experience. Explore our solutions now!',
-                        keywords: 'AI Chatbot, ChatBot software'
-                    };
+                return {
+                    title: 'Enhance customer interaction with AiInfox AI Chatbot Software.',
+                    description: 'Discover AiInfox powerful AI chatbot software, which provides seamless customer engagement and an improved user experience. Explore our solutions now!',
+                    keywords: 'AI Chatbot, ChatBot software'
+                };
             case '/about-us':
                 return {
                     title: 'About AiInfox: Company Overview And Mission',
@@ -159,9 +159,9 @@ export class GlobalService {
                 };
             case '/services':
                 return {
-                    title: 'Services',
-                    description: 'Services Description',
-                    keywords: 'Services Keywords'
+                    title: 'AiInfox: Innovative Solutions for Your Business Needs',
+                    description: 'Explore AiInfox offerings in AI and ML, digital marketing and SEO, generative AI, and web design. Comprehensive solutions to elevate your business',
+                    keywords: 'AI and ML, digital marketing and SEO, generative AI, and web design'
                 };
             case '/contact-us':
                 return {
@@ -175,6 +175,24 @@ export class GlobalService {
                     description: 'Blog Description',
                     keywords: 'Blog Keywords'
                 };
+            case '/discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries':
+                return {
+                    title: 'Top AI Development Companies in Mohali Revolutionizing Sector ',
+                    description: 'Blog DescriptionExplore how leading AI development companies in Mohali are transforming various industries with innovative solutions and cutting-edge technology.',
+                    keywords: 'healthcare services, AI development company'
+                };
+                case '/elevate-your-brand-with-a-top-notch-web-design-company':
+                    return {
+                        title: 'Find the best web design company to elevate your brand',
+                        description: 'Discover the best web design company to boost your brand awareness and create an impactful online presence with our website design services in Mohali. ',
+                        keywords: 'Web design company '
+                    };
+                case '/how-to-choose-the-best-mobile-app-development-company-in-mohali':
+                    return {
+                            title: 'Choose the Best App Development Company in Mohali',
+                            description: 'Find out how to choose the best app development company in Mohali and make sure your mobile app project is a success with helpful tips and advice. ',
+                            keywords: 'App Development company in Mohali'
+                    };
             case '/blog-details':
                 return {
                     title: 'Blog Details',

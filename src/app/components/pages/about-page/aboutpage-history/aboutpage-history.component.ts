@@ -38,7 +38,7 @@ export class AboutpageHistoryComponent implements OnInit {
         },
         {
             year: '2023',
-            date: 'March 25',
+            date: 'November 15',
             title: 'Significant Growth',
             paragraphText: 'By the end of 2023, our dedication to quality and expanding portfolio of successful projects had resulted in enormous growth. We grew our team, improved our capabilities, and prepared to face new challenges and opportunities.',
             img: 'assets/img/history/img3.jpg',
@@ -46,7 +46,7 @@ export class AboutpageHistoryComponent implements OnInit {
         },
         {
             year: '2024',
-            date: 'December 10',
+            date: 'March 10',
             title: 'Global Expansion and AI Integration',
             paragraphText: 'In 2024, our company went global, delivering our services to a wider community. We also embraced AI, integrating new and efficient solutions into our efforts. This represented the start of a new chapter, showing our aspirations for global leadership and innovation.',
             img: 'assets/img/history/img4.jpg',
