@@ -13,7 +13,9 @@ export class ConversionrateComponent {
   constructor(private emailService: EmailService,private metaService: Meta,
     private titleService: Title) { }
   ngOnInit() {
-    this.metaService.addTag({ property: 'og:title', content: 'Blog'});
+    this.metaService.updateTag({ property: 'og:title', content: 'Find the best web design company to elevate your brand.'});
+    this.metaService.updateTag({property:'description',content:'Discover the best web design company to boost your brand awareness and create an impactful online presence with our website design services in Mohali.'})
+    this.metaService.updateTag({ name:'keywords',content:'Web design company'});
     this.titleService.setTitle("Find the best web design company to elevate your brand.");
     this.initCommentForm();
   }

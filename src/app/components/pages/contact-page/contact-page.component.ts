@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Meta, Title } from '@angular/platform-browser';
 import { EmailService } from 'src/app/_services/email.service';
 
 @Component({
@@ -9,34 +10,43 @@ import { EmailService } from 'src/app/_services/email.service';
 })
 export class ContactPageComponent implements OnInit {
     contactForm: any;
-    constructor(private emailService: EmailService) { }
+    constructor(private emailService: EmailService, private metaService: Meta,
+        private titleService: Title) { }
+
+
 
     ngOnInit() {
         this.initContactForm();
+        this.metaService.updateTag({ property: 'og:title', content: 'Contact Us for Custom AI Solutions'});
+
+        this.metaService.updateTag({ name: 'keywords', content: 'Custom AI solution, Contact us' });
+        this.metaService.updateTag({ name: 'description', content: 'Explore the ideal AI solutions to encourage innovative ideas. To discuss your project requirements with India top AI specialists, get in touch with us.' },
+        )
+        this.titleService.setTitle("Contact Us for Custom AI Solutions");
     }
 
     initContactForm() {
         this.contactForm = new FormGroup({
             name: new FormControl(''),
-            email : new FormControl(''), 
-            phoneNumber : new FormControl(''),
-            message : new FormControl('')
+            email: new FormControl(''),
+            phoneNumber: new FormControl(''),
+            message: new FormControl('')
         })
 
     }
 
-    onSend(){
+    onSend() {
         this.emailService.sendEmail(this.contactForm.value).then(
             (response) => {
-              console.log('Email sent successfully', response.text);
-              this.contactForm.reset();
-            //   alert('Email sent successfully');
+                console.log('Email sent successfully', response.text);
+                this.contactForm.reset();
+                //   alert('Email sent successfully');
             },
             (error) => {
-              console.log('Failed to send email', error);
-            //   alert('Failed to send email');
+                console.log('Failed to send email', error);
+                //   alert('Failed to send email');
             }
-          );
+        );
     }
 
     pageTitleArea: pageTitle[] = [

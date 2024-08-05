@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GlobalService } from 'src/app/_services/global.service';
 import { BlogDetailsPageComponent } from '../blog-details-page/blog-details-page.component';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-blog-page',
@@ -14,11 +15,19 @@ export class BlogPageComponent implements OnInit {
 
     constructor(
         private router: Router,
-        private globalService: GlobalService
+        private globalService: GlobalService,
+        private metaService: Meta,
+        private titleService: Title
     ) { }
 
     ngOnInit(): void {
         this.getBlogDetails();
+        this.metaService.updateTag({ property: 'og:title', content: 'AiInfox Blog: Insights on AI Innovations'});
+
+        this.metaService.updateTag({ name:'keywords',content:'AiInfox Blog'});
+        this.metaService.updateTag({ name: 'description', content: 'Explore the AiInfox Blog for the latest trends and insights in artificial intelligence. Stay updated with expert articles and industry news.' },
+        )
+        this.titleService.setTitle("AiInfox Blog: Insights on AI Innovations");
     }
 
     getBlogDetails() {

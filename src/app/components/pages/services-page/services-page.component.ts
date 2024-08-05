@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
@@ -9,10 +10,17 @@ import { GlobalService } from 'src/app/_services/global.service';
 export class ServicesPageComponent implements OnInit {
 
     constructor(
-        private global: GlobalService
+        private global: GlobalService,
+        private metaService : Meta,
+        private titleService : Title
     ) { }
 
     ngOnInit(): void {
+        this.metaService.updateTag({ property: 'og:title', content: 'AiInfox: Innovative Solutions for Your Business Needs'});
+        this.titleService.setTitle("AiInfox: Innovative Solutions for Your Business Needs");
+        this.metaService.updateTag({ name:'keywords',content:'AI and ML, digital marketing and SEO, generative AI, and web design'});
+        this.metaService.updateTag({ name: 'description', content: 'Explore AiInfox offerings in AI and ML, digital marketing and SEO, generative AI, and web design. Comprehensive solutions to elevate your business'},
+        )
     }
 
     pageTitleArea: pageTitle[] = [

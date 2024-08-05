@@ -13,7 +13,9 @@ export class BusinessdataComponent {
   constructor(private emailService: EmailService,private metaService: Meta,
     private titleService: Title) { }
   ngOnInit() {
-    this.metaService.addTag({ property: 'og:title', content: 'Blog'});
+    this.metaService.updateTag({ property: 'og:title', content: 'Choose the Best App Development Company in Mohali'});
+    this.metaService.updateTag({property:'description',content:'Find out how to choose the best app development company in Mohali and make sure your mobile app project is a success with helpful tips and advice.'})
+    this.metaService.updateTag({ name:'keywords',content:'App Development company in Mohali'});
     this.titleService.setTitle("Choose the Best App Development Company in Mohali");
     this.initCommentForm();
   }

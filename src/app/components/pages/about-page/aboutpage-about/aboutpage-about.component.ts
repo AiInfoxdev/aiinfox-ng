@@ -11,12 +11,15 @@ export class AboutpageAboutComponent implements OnInit {
 
     constructor(
         private metaService: Meta,
-        private titleService: Title
+        private titleService: Title,
     ) { }
 
     ngOnInit(): void {
-        this.metaService.addTag({ property: 'og:title', content: 'About Us'});
-        this.titleService.setTitle("AiINFOX:: About Us");
+        this.metaService.updateTag({ property: 'og:title', content: 'About AiInfox: Company Overview and Mission '});
+        this.metaService.updateTag({ name:'keywords',content:'about us, company overview '});
+        this.metaService.updateTag({ name: 'description', content: 'Explore AiInfox About Us page for a detailed company overview and mission statement. Learn about our values and commitment to innovation.' },
+        )
+        this.titleService.setTitle("About AiInfox: Company Overview and Mission ");
     }
 
     aboutImage: Image[] = [

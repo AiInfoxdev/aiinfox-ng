@@ -14,7 +14,9 @@ export class DiscoverhowtopaiComponent implements OnInit {
   constructor(private emailService: EmailService, private metaService: Meta,
     private titleService: Title) { }
   ngOnInit() {
-    this.metaService.addTag({ property: 'og:title', content: 'Blog'});
+    this.metaService.updateTag({ property: 'og:title', content: 'Top AI Development Companies in Mohali Revolutionizing Sector'});
+    this.metaService.updateTag({property:'description',content:'Blog DescriptionExplore how leading AI development companies in Mohali are transforming various industries with innovative solutions and cutting-edge technology.'})
+    this.metaService.updateTag({ name:'keywords',content:'healthcare services, AI development company'});
     this.titleService.setTitle("Top AI Development Companies in Mohali Revolutionizing Sector");
     this.initCommentForm();
   }

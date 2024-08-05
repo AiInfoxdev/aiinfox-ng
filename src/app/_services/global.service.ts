@@ -47,6 +47,7 @@ export class GlobalService {
     blogDataOrig: any[] = [
         {
             postImg: 'assets/img/blog/aiblog.jpg',
+            postImgpath:'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'blog-details',
             postDate: 'July 24, 2024',
@@ -59,6 +60,7 @@ export class GlobalService {
         },
         {
             postImg: 'assets/img/blog/designus.jpg',
+            postImgpath:'elevate-your-brand-with-a-top-notch-web-design-company',
             postTitle: 'Elevate Your Brand with A Top-Notch Web Design Company',
             postLink: 'blog-details',
             postDate: 'July 10 2024',
@@ -71,6 +73,7 @@ export class GlobalService {
         },
         {
             postImg: 'assets/img/blog/mobileapp.jpg',
+            postImgpath:'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
             postLink: 'blog-details',
             postDate: 'June 28, 2024',
@@ -171,7 +174,7 @@ export class GlobalService {
                 };
             case '/blog':
                 return {
-                    title: 'Blog',
+                    title: 'AiInfox: Blog',
                     description: 'Blog Description',
                     keywords: 'Blog Keywords'
                 };
