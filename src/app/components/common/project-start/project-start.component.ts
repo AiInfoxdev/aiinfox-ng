@@ -115,6 +115,16 @@ export class ProjectStartComponent implements OnInit {
         }
     
     ]
+    webdevelopContent: Content[] = [
+        {
+            title: 'Lets Start With AiInfox ',
+            paragraphText: `Our skilled web developers are committed to establishing AiInfox as a leader in <a href='' style="color:white"> web development services in Mohali </a> demonstrating our prowess in integrating artificial intelligence.`,
+            defaultBtnIcon: 'flaticon-web',
+            defaultBtnText: 'Get Started',
+            defaultBtnLink: 'contact-us'
+        }
+    
+    ]
     mobileappContent: Content[] = [
         {
             title: 'Get ready to see your ideas turn into reality in the form of apps! ',
