@@ -57,7 +57,7 @@ const routes: Routes = [
     {path: 'ai-hrms', component: AihrmsComponent},
     {path: 'ai-hms', component: AihmsComponent},
     {path: 'ai-chatbot', component: AichatbotComponent},
-    //{path: 'landing-ai-ml-developement', component: AiMlDevelopmentComponent},
+    {path: 'landing-ai-ml-development', component: AiMlDevelopmentComponent},
     //{path: 'landing-gen-ai-development', component: GenAiDevelopmentComponent},
     // {path: 'courses-details', component: CoursesDetailsPageComponent},
     // {path: 'events', component: EventsPageComponent},
