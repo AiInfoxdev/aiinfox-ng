@@ -22,9 +22,11 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
                 "src/favicon.ico",
-                "src/assets"
+                "src/assets",
+                "src/robots.txt"
             ],
             "styles": [
                 "node_modules/bootstrap/scss/bootstrap.scss",
@@ -123,7 +125,8 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/robots.txt"
             ],
             "styles": [
               "src/styles.scss"
@@ -184,7 +187,9 @@
               "browserTarget": "wilo-ng:build:production",
               "serverTarget": "wilo-ng:server:production"
             }
+           
           },
+         
           "defaultConfiguration": "development"
         },
         "prerender": {

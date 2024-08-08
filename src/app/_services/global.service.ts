@@ -51,7 +51,7 @@ export class GlobalService {
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
             postLink: 'blog-details',
             postDate: 'July 24, 2024',
-            postAuthorImage: 'assets/img/user1.jpg',
+            postAuthorImage: 'assets/img/user3.jpg',
             alt: 'AI Development Company',
             postAuthorName: 'Karan',
             authorAlt: 'Karan',

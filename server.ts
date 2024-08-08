@@ -6,6 +6,7 @@ import * as express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import AppServerModule from './src/main.server';
+import * as path from 'path';
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -19,6 +20,16 @@ export function app(): express.Express {
 
   server.set('view engine', 'html');
   server.set('views', distFolder);
+
+  // Serve robots.txt from the root
+  server.get('/robots.txt', (req, res) => {
+    const robotsTxtPath = path.join(distFolder, 'robots.txt');
+    if (existsSync(robotsTxtPath)) {
+      res.sendFile(robotsTxtPath);
+    } else {
+      res.status(404).send('robots.txt not found');
+    }
+  });
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
