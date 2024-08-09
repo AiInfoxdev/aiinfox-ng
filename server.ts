@@ -31,6 +31,16 @@ export function app(): express.Express {
     }
   });
 
+   // Serve sitemap.xml from the root
+   server.get('/sitemap.xml', (req, res) => {
+    const sitemapPath = path.join(distFolder, 'sitemap.xml');
+    if (existsSync(sitemapPath)) {
+      res.sendFile(sitemapPath);
+    } else {
+      res.status(404).send('sitemap.xml not found');
+    }
+  });
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
