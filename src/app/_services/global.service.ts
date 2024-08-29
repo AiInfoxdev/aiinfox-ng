@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { BehaviorSubject, Observable, of } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { DiscoverhowtopaiComponent } from '../components/pages/blog-details-page/discoverhowtopai/discoverhowtopai.component';
@@ -13,6 +13,17 @@ import { BusinessdataComponent } from '../components/pages/blog-details-page/Bus
 })
 export class GlobalService {
     private apiUrl = 'https://api.example.com';
+
+    private isMenuClickedSource = new BehaviorSubject<any>(null);
+    public _isMenuClicked: Observable<any> = this.isMenuClickedSource.asObservable();
+
+    set isMenuClicked(event: any) {
+        this.isMenuClickedSource.next(event);
+    }
+    
+    get isMenuClicked() {
+        return this._isMenuClicked as any;
+    }
 
     constructor(
         private http: HttpClient,

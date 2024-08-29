@@ -2030,3 +2030,19 @@ Shape Img CSS
         }
     }
 }
+
+.max-none {
+    max-width: none !important;
+}
+
+.landingaboutcontent {
+    .features-list li {
+        padding-top: 0 !important;
+        span {
+            width: 100%;
+            text-align: left !important;
+            align-items: start !important;
+            justify-content: start !important;
+        }
+    }
+}

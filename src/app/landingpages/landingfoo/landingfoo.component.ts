@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { GlobalService } from 'src/app/_services/global.service';
 
 @Component({
   selector: 'app-landingfoo',
@@ -13,6 +14,7 @@ export class LandingfooComponent implements OnInit {
 
   constructor(
       private router: Router,
+      private globalService: GlobalService
   ) {
       this.router.events
       .subscribe((event) => {
@@ -30,5 +32,11 @@ export class LandingfooComponent implements OnInit {
   }
 
   ngOnInit(): void { }
+
+  menuClicked(menu: any){
+    // this.onClickServices.emit(true);
+    console.log("menu..",menu)
+    this.globalService.isMenuClicked = menu;
+  }
 
 }

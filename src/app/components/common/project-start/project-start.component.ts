@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, output, ViewEncapsulation } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 
@@ -16,6 +16,7 @@ import { Location, LocationStrategy, PathLocationStrategy } from '@angular/commo
 export class ProjectStartComponent implements OnInit {
 
     @Input('section') section: string = '';
+    @Output('clickTrialButton') clickTrialButton = new EventEmitter<any>()
 
     location: any;
     circleShape1Class: any;
@@ -42,7 +43,7 @@ export class ProjectStartComponent implements OnInit {
                     this.vectorShape3Class = 'vector-shape3 d-block';
                     this.vectorShape9Class = 'vector-shape9 d-none';
                     this.vectorShape10Class = 'vector-shape10 d-none';
-                } else if (this.location == '/home-four' || this.location == '/data-science' || this.location == '/mobile-app-development' || this.location == '/web-development' || this.location == '/web-design' || this.location == '/digital-marketing-seo' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq' || this.location ==='/landing-ai-ml-developement'
+                } else if (this.location == '/home-four' || this.location == '/data-science' || this.location == '/mobile-app-development' || this.location == '/web-development' || this.location == '/web-design' || this.location == '/digital-marketing-seo' || this.location == '/services' || this.location == '/generative-ai' || this.location == '/about-us' || this.location == '/ai-machine-learning' || this.location == '/faq' || this.location ==='/landing-ai-ml-development'
                 ){
                     this.circleShape1Class = 'circle-shape1 d-none';
                     this.vectorShape3Class = 'vector-shape3 d-none';
@@ -55,6 +56,10 @@ export class ProjectStartComponent implements OnInit {
     }
     
     ngOnInit(): void {
+    }
+
+    onClickTrial(){
+        this.clickTrialButton.emit(true);
     }
 
     projectStartImage: Image[] = [
