@@ -90,6 +90,8 @@ import { LandingfooComponent } from './landingpages/landingfoo/landingfoo.compon
 import { GenAiDevelopmentComponent } from './landingpages/gen-ai-development/gen-ai-development.component';
 import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml-development.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PrivacyPolicyComponent } from './components/common/privacy-policy/privacy-policy.component';
+import { TermsAndConditionsComponent } from './components/common/terms-and-conditions/terms-and-conditions.component';
 
 @NgModule({
   declarations: [
@@ -179,6 +181,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     LandingfooComponent,
     GenAiDevelopmentComponent,
     AiMlDevelopmentComponent,
+    PrivacyPolicyComponent,
+    TermsAndConditionsComponent
   ],
   imports: [
     BrowserModule,
