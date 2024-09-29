@@ -92,6 +92,7 @@ import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml
 import { ReactiveFormsModule } from '@angular/forms';
 import { PrivacyPolicyComponent } from './components/common/privacy-policy/privacy-policy.component';
 import { TermsAndConditionsComponent } from './components/common/terms-and-conditions/terms-and-conditions.component';
+import { DigitalmarketingComponent } from './components/pages/blog-details-page/digitalmarketing/digitalmarketing.component';
 
 @NgModule({
   declarations: [
@@ -178,6 +179,7 @@ import { TermsAndConditionsComponent } from './components/common/terms-and-condi
     ConversionrateComponent,
     BusinessdataComponent,
     LandingnavbarComponent,
+    DigitalmarketingComponent,
     LandingfooComponent,
     GenAiDevelopmentComponent,
     AiMlDevelopmentComponent,

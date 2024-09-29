@@ -7,6 +7,7 @@ import { DiscoverhowtopaiComponent } from '../components/pages/blog-details-page
 import { BlogDetailsPageComponent } from '../components/pages/blog-details-page/blog-details-page.component';
 import { ConversionrateComponent } from '../components/pages/blog-details-page/Conversionrate/conversionrate.component';
 import { BusinessdataComponent } from '../components/pages/blog-details-page/Businessdata/businessdata.component';
+import { DigitalmarketingComponent } from '../components/pages/blog-details-page/digitalmarketing/digitalmarketing.component';
 
 @Injectable({
     providedIn: 'root'
@@ -57,6 +58,19 @@ export class GlobalService {
 
     blogDataOrig: any[] = [
         {
+            postImg: 'assets/img/blog/digital-marketingblog-featured.jpg',
+            postImgpath:'how-to-boost-your-brand-with-aiInfox-digital-marketing-services-in-2024',
+            postTitle: 'How to Boost Your Brand with AiInfox Digital Marketing Services in 2024?',
+            postLink: 'blog-details',
+            postDate: 'September 26, 2024',
+            alt: 'Digital Marketing Company',
+            postAuthorImage: 'assets/img/user1.jpg',
+            postAuthorName: 'Akhil',
+            authorAlt: 'Akhil',
+            path: 'how-to-boost-your-brand-with-aiInfox-digital-marketing-services-in-2024',
+            component: DigitalmarketingComponent
+        },
+        {
             postImg: 'assets/img/blog/aiblog.jpg',
             postImgpath:'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries',
             postTitle: 'Discover How Top AI Development Companies in Mohali are Revolutionizing the Future of Industries?',
@@ -95,6 +109,8 @@ export class GlobalService {
             path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
             component: BusinessdataComponent
         },
+
+  
     ];
 
     get currentPageMETA(): any {
@@ -207,6 +223,13 @@ export class GlobalService {
                             description: 'Find out how to choose the best app development company in Mohali and make sure your mobile app project is a success with helpful tips and advice. ',
                             keywords: 'App Development company in Mohali'
                     };
+                case '/how-to-boost-your-brand-with-aiInfox-digital-marketing-services-in-2024':
+                    return {
+                            title: 'How to Boost Your Brand with AiInfox Digital Marketing Services in 2024? ',
+                            description: 'Explore how to enhance your brand in 2024 using digital marketing services. We offer personalized SEO, content, and social media strategies. ',
+                            keywords: 'digital marketing services in Mohali'
+                    };
+
             case '/blog-details':
                 return {
                     title: 'Blog Details',
