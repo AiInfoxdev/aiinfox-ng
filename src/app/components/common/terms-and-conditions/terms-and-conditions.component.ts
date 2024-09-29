@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TermsAndConditionsComponent {
 
-  constructor() { }
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
   }
