@@ -96,21 +96,19 @@ export class GlobalService {
             path: 'elevate-your-brand-with-a-top-notch-web-design-company',
             component: ConversionrateComponent
         },
-        {
-            postImg: 'assets/img/blog/mobileapp.jpg',
-            postImgpath:'how-to-choose-the-best-mobile-app-development-company-in-mohali',
-            postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
-            postLink: 'blog-details',
-            postDate: 'June 28, 2024',
-            alt: 'App Development Company',
-            postAuthorImage: 'assets/img/user1.jpg',
-            postAuthorName: 'Manjeet',
-            authorAlt: 'Manjeet',
-            path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
-            component: BusinessdataComponent
-        },
-
-  
+        // {
+        //     postImg: 'assets/img/blog/mobileapp.jpg',
+        //     postImgpath:'how-to-choose-the-best-mobile-app-development-company-in-mohali',
+        //     postTitle: 'How to Choose the Best Mobile App Development Company in Mohali?',
+        //     postLink: 'blog-details',
+        //     postDate: 'June 28, 2024',
+        //     alt: 'App Development Company',
+        //     postAuthorImage: 'assets/img/user1.jpg',
+        //     postAuthorName: 'Manjeet',
+        //     authorAlt: 'Manjeet',
+        //     path: 'how-to-choose-the-best-mobile-app-development-company-in-mohali',
+        //     component: BusinessdataComponent
+        // },
     ];
 
     get currentPageMETA(): any {
