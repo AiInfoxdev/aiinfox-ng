@@ -32,17 +32,28 @@ export class DigitalmarketingComponent implements OnInit{
   }
 
   onSend() {
-    this.emailService.sendEmail(this.commentForm.value).then(
-      (response) => {
-        console.log('Email sent successfully', response.text);
-        this.commentForm.reset();
+    // this.emailService.sendEmail(this.commentForm.value).then(
+    //   (response) => {
+    //     console.log('Email sent successfully', response.text);
+    //     this.commentForm.reset();
        
+    //   },
+    //   (error) => {
+    //     console.log('Failed to send email', error);
+        
+    //   }
+    // );
+
+    this.emailService.sendEmail(this.commentForm.value).subscribe(
+      (response) => {
+          console.log('Email sent successfully', response);
+          this.commentForm.reset();
+          
       },
       (error) => {
-        console.log('Failed to send email', error);
-        
-      }
-    );
+          console.log('Failed to send email', error);
+          
+      });
 
   }
 

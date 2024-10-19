@@ -60,10 +60,21 @@ export class AiMlDevelopmentComponent implements OnInit {
     }
 
     onSend() {
-        this.emailService.sendEmail(this.contactForm.value).then(
+        // this.emailService.sendEmail(this.contactForm.value).then(
+        //     (response) => {
+        //         console.log('Email sent successfully', response.text);
+        //         this.contactForm.reset();
+        //     },
+        //     (error) => {
+        //         console.log('Failed to send email', error);
+        //         //   alert('Failed to send email');
+        //     }
+        // );
+        this.emailService.sendEmail(this.contactForm.value).subscribe(
             (response) => {
-                console.log('Email sent successfully', response.text);
+                console.log('Email sent successfully', response);
                 this.contactForm.reset();
+                //   alert('Email sent successfully');
             },
             (error) => {
                 console.log('Failed to send email', error);

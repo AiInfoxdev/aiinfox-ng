@@ -32,17 +32,28 @@ export class DiscoverhowtopaiComponent implements OnInit {
   }
 
   onSend() {
-    this.emailService.sendEmail(this.commentForm.value).then(
+    // this.emailService.sendEmail(this.commentForm.value).then(
+    //   (response) => {
+    //     console.log('Email sent successfully', response.text);
+    //     this.commentForm.reset();
+    //     //   alert('Email sent successfully');
+    //   },
+    //   (error) => {
+    //     console.log('Failed to send email', error);
+    //     //   alert('Failed to send email');
+    //   }
+    // );
+    this.emailService.sendEmail(this.commentForm.value).subscribe(
       (response) => {
-        console.log('Email sent successfully', response.text);
-        this.commentForm.reset();
-        //   alert('Email sent successfully');
+          console.log('Email sent successfully', response);
+          this.commentForm.reset();
+          //   alert('Email sent successfully');
       },
       (error) => {
-        console.log('Failed to send email', error);
-        //   alert('Failed to send email');
+          console.log('Failed to send email', error);
+          //   alert('Failed to send email');
       }
-    );
+  );
 
   }
 
