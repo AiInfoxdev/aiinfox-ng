@@ -93,6 +93,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PrivacyPolicyComponent } from './components/common/privacy-policy/privacy-policy.component';
 import { TermsAndConditionsComponent } from './components/common/terms-and-conditions/terms-and-conditions.component';
 import { DigitalmarketingComponent } from './components/pages/blog-details-page/digitalmarketing/digitalmarketing.component';
+import { DubaiLandingPageComponent } from './landingpages/dubai-landing-page/dubai-landing-page.component';
 
 @NgModule({
   declarations: [
@@ -184,7 +185,8 @@ import { DigitalmarketingComponent } from './components/pages/blog-details-page/
     GenAiDevelopmentComponent,
     AiMlDevelopmentComponent,
     PrivacyPolicyComponent,
-    TermsAndConditionsComponent
+    TermsAndConditionsComponent,
+    DubaiLandingPageComponent
   ],
   imports: [
     BrowserModule,

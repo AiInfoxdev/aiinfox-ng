@@ -19,6 +19,7 @@ import { AihrmsComponent } from './components/pages/product-details-page/aihrms/
 import { AiMlDevelopmentComponent } from './landingpages/ai-ml-development/ai-ml-development.component';
 import { TermsAndConditionsComponent } from './components/common/terms-and-conditions/terms-and-conditions.component';
 import { PrivacyPolicyComponent } from './components/common/privacy-policy/privacy-policy.component';
+import { DubaiLandingPageComponent } from './landingpages/dubai-landing-page/dubai-landing-page.component';
 
 const routes: Routes = [
     {path: '', component: HomepageOneComponent},
@@ -35,6 +36,7 @@ const routes: Routes = [
     {path: 'mobile-app-development', component: MobileappdevelopmentComponent},
     {path: 'web-design', component: WebdesignComponent},
     {path: 'web-development', component: WebdevelopmentComponent},
+    {path: 'Landing-page', component: DubaiLandingPageComponent},
     // {path: 'services-details', component: ServicesDetailsPageComponent},
     //Blog URLs
     // {path: 'discover-how-top-ai-development-companies-in-mohali-are-revolutionizing-the-future-of-industries', component: DiscoverhowtopaiComponent},
@@ -57,6 +59,7 @@ const routes: Routes = [
     {path: 'blog', component: BlogPageComponent},
     // {path: 'blog-details', component: BlogDetailsPageComponent},
     {path: 'contact-us', component: ContactPageComponent},
+    
     
     // Here add new component
     
